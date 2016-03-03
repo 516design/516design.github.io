@@ -1,19 +1,16 @@
-@import url(vendor/normalize.css);
 html {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 header {
   background-color: #F1F2F3;
   padding: 0.2rem;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0; }
-  header .logo {
+  top: 0; right: 0; left: 0;
+  .logo {
     background-image: url("../../img/logo.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 1.7rem;
-    width: 6rem; }
-
-/*# sourceMappingURL=styles.css.map */
+    height: 1.7rem; width: 6rem;
+  }
+}
