@@ -17,7 +17,7 @@ header {
     padding: 1rem;
   }
   .macbook {
-    background-color: #D7D7D9;
+    background-color: #D6D6DC;
     border-radius: 20px;
     margin: 0 auto;
     position: relative;
@@ -28,8 +28,8 @@ header {
     }
     @media #{$desktop} {
       padding: 0;
-      height: 30rem;
-      width: 45rem;
+      height: 25rem;
+      width: 38rem;
     }
   }
 }
@@ -38,6 +38,9 @@ header {
   background-size: 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
+  position: absolute;
+  height: 1px;
+  transition: .2s ease-in-out;
 }
 
 $small-icon: 4.5rem;
@@ -47,8 +50,18 @@ $large-icon: 7rem;
 .icon--apple {
   @extend .icon;
   background-image: url("../../img/icon--apple.svg");
+  padding: 7.5%;
+  top: 36%; right: 42.5%;
+}
+
+.decal__il--d {
+  @extend .icon;
+  background-image: url("../../img/decal__il--d.svg");
+  opacity: 1;
+  z-index: 1;
   padding: 10%;
-  position: absolute;
-  top: 35%;
-  right: 40%;
+  top: 35%; right: 40%;
+  &:hover {
+    opacity: .5;
+  }
 }

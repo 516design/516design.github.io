@@ -22,7 +22,7 @@ header {
     .content {
       padding: 1rem; } }
   .content .macbook {
-    background-color: #D7D7D9;
+    background-color: #D6D6DC;
     border-radius: 20px;
     margin: 0 auto;
     position: relative;
@@ -31,22 +31,34 @@ header {
     @media all and (min-width: 40em) {
       .content .macbook {
         border-radius: 30px; } }
-    @media all and (min-width: 64em) {
+    @media all and (min-width: 55em) {
       .content .macbook {
         padding: 0;
-        height: 30rem;
-        width: 45rem; } }
+        height: 25rem;
+        width: 38rem; } }
 
-.icon, .icon--apple {
+.icon, .icon--apple, .decal__il--d {
   background-size: 100%;
   background-position: 0 0;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 1px;
+  transition: .2s ease-in-out; }
 
 .icon--apple {
   background-image: url("../../img/icon--apple.svg");
+  padding: 7.5%;
+  top: 36%;
+  right: 42.5%; }
+
+.decal__il--d {
+  background-image: url("../../img/decal__il--d.svg");
+  opacity: 1;
+  z-index: 1;
   padding: 10%;
-  position: absolute;
   top: 35%;
   right: 40%; }
+  .decal__il--d:hover {
+    opacity: .5; }
 
 /*# sourceMappingURL=styles.css.map */
