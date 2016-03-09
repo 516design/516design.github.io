@@ -1,0 +1,50 @@
+.image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header-title {
+  color: $gray;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.help-step {
+  margin: 0 auto;
+  max-width: 800px;
+  .clean-icon {
+    @extend .image;
+    background-image: url("../../img/help-clean.svg");
+    height: 12rem; width: 13rem;
+    margin: 0 auto;
+    @media #{$desktop} {
+      height: 12rem; width: 100%;
+    }
+  }
+
+  .help-header,
+  .help-details {
+    margin: auto;
+    width: 90%;
+  }
+
+  .help-header {
+    margin: 0;
+    font-size: 1rem;
+    @media #{$desktop} {
+      margin-top: 3.5rem;
+      width: auto;
+    }
+  }
+
+  .help-details {
+    color: rgba($gray, .7);
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    @media #{$desktop} {
+      margin: 0.8rem 0;
+    }
+  }
+}

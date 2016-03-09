@@ -3,8 +3,38 @@ $tablet:        "all and (min-width: 40em)" !default;
 $desktop:       "all and (min-width: 55em)" !default;
 $desktop-large: "all and (min-width: 96em)" !default;
 
+$lato: 'Lato', sans-serif;
+
+* { box-sizing:border-box; }
+
 html {
   font-size: 18px;
+  font-family: $lato;
 }
 
 $gray: #464849;
+
+.content {
+  overflow: auto;
+}
+
+.column {
+  float: left;
+  padding: 0.5rem;
+  width: 100%;
+  @media #{$desktop} { padding: 1rem; }
+}
+
+.column-third {
+  @extend .column;
+  @media #{$desktop} {
+    width: calc(100% / 3);
+  }
+}
+
+.column-two-thirds {
+  @extend .column;
+  @media #{$desktop} {
+    width: calc(200% / 3);
+  }
+}
