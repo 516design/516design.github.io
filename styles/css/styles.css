@@ -113,7 +113,7 @@ header {
     margin: auto;
     width: 90%; }
   .help-step .help-header {
-    margin: 0;
+    margin-bottom: 0.5rem;
     font-size: 1rem; }
     @media all and (min-width: 55em) {
       .help-step .help-header {
