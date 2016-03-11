@@ -13,14 +13,15 @@
 
 .help-step {
   margin: 0 auto;
-  max-width: 800px;
+
+  max-width: 960px;
   .clean-icon {
     @extend .image;
     background-image: url("../../img/help-clean.svg");
-    height: 12rem; width: 13rem;
+    height: 14rem; width: 14rem;
     margin: 0 auto;
     @media #{$desktop} {
-      height: 12rem; width: 100%;
+      height: 14rem; width: 100%;
     }
   }
 
@@ -34,7 +35,7 @@
     margin-bottom: 0.5rem;
     font-size: 1rem;
     @media #{$desktop} {
-      margin-top: 3.5rem;
+      margin-top: 4.5rem;
       width: auto;
     }
   }
