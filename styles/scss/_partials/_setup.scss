@@ -5,6 +5,9 @@ $desktop-large: "all and (min-width: 96em)" !default;
 
 $lato: 'Lato', sans-serif;
 
+$gray: #464849;
+$color-twitter: #60B5F0;
+
 * { box-sizing:border-box; }
 
 html {
@@ -16,7 +19,16 @@ body {
   background-color: rgba(#D6D8DE, .5);
 }
 
-$gray: #464849;
+a {
+  color: $color-twitter;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  transition: all 0.2s ease;
+  &:hover {
+    opacity: .8;
+  }
+}
 
 .content {
   overflow: auto;

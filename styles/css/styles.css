@@ -9,6 +9,15 @@ html {
 body {
   background-color: rgba(214, 216, 222, 0.5); }
 
+a {
+  color: #60B5F0;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  transition: all 0.2s ease; }
+  a:hover {
+    opacity: .8; }
+
 .content {
   overflow: auto; }
 
@@ -88,7 +97,7 @@ header {
   .decal__il--d:hover {
     opacity: .5; }
 
-.image, .help-step .clean-icon, .help-step .trash-icon {
+.image, .help-step .clean-icon, .help-step .trash-icon, .help-step .peel-icon {
   background-position: 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -96,7 +105,7 @@ header {
   width: 14rem;
   margin: 0 auto; }
   @media all and (min-width: 55em) {
-    .image, .help-step .clean-icon, .help-step .trash-icon {
+    .image, .help-step .clean-icon, .help-step .trash-icon, .help-step .peel-icon {
       height: 12rem;
       width: 100%; } }
 
@@ -127,7 +136,12 @@ header {
     background-image: url("../../img/help-trash.svg"); }
     @media all and (min-width: 55em) {
       .help-step .trash-icon {
-        background-position: 1rem -1.9rem; } }
+        background-position: 1rem -1.8rem; } }
+  .help-step .peel-icon {
+    background-image: url("../../img/help-peel.svg"); }
+    @media all and (min-width: 55em) {
+      .help-step .peel-icon {
+        background-position: 0 -1.5rem; } }
   .help-step .help-header,
   .help-step .help-details {
     margin: auto;
@@ -156,9 +170,9 @@ header {
     .help-step .help-header#step-two:before {
       content: "2"; }
     .help-step .help-header#step-three:before {
-      content: "2"; }
+      content: "3"; }
     .help-step .help-header#step-four:before {
-      content: "2"; }
+      content: "4"; }
   .help-step .help-details {
     color: rgba(70, 72, 73, 0.7);
     font-size: 0.9rem;
