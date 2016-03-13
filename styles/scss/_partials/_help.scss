@@ -47,6 +47,14 @@
     }
   }
 
+  .apply-icon {
+    @extend .image;
+    background-image: url("../../img/help-apply.svg");
+    @media #{$desktop} {
+      background-position: 0 -1.5rem;
+    }
+  }
+
   .peel-icon {
     @extend .image;
     background-image: url("../../img/help-peel.svg");

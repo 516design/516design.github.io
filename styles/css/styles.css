@@ -97,7 +97,7 @@ header {
   .decal__il--d:hover {
     opacity: .5; }
 
-.image, .help-step .clean-icon, .help-step .trash-icon, .help-step .peel-icon {
+.image, .help-step .clean-icon, .help-step .trash-icon, .help-step .apply-icon, .help-step .peel-icon {
   background-position: 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -105,7 +105,7 @@ header {
   width: 14rem;
   margin: 0 auto; }
   @media all and (min-width: 55em) {
-    .image, .help-step .clean-icon, .help-step .trash-icon, .help-step .peel-icon {
+    .image, .help-step .clean-icon, .help-step .trash-icon, .help-step .apply-icon, .help-step .peel-icon {
       height: 12rem;
       width: 100%; } }
 
@@ -137,6 +137,11 @@ header {
     @media all and (min-width: 55em) {
       .help-step .trash-icon {
         background-position: 1rem -1.8rem; } }
+  .help-step .apply-icon {
+    background-image: url("../../img/help-apply.svg"); }
+    @media all and (min-width: 55em) {
+      .help-step .apply-icon {
+        background-position: 0 -1.5rem; } }
   .help-step .peel-icon {
     background-image: url("../../img/help-peel.svg"); }
     @media all and (min-width: 55em) {
