@@ -6,6 +6,9 @@ html {
   font-size: 18px;
   font-family: "Lato", sans-serif; }
 
+body {
+  background-color: rgba(214, 216, 222, 0.5); }
+
 .content {
   overflow: auto; }
 
@@ -93,7 +96,7 @@ header {
   margin: 0 auto; }
   @media all and (min-width: 55em) {
     .image, .help-step .clean-icon, .help-step .trash-icon {
-      height: 14rem;
+      height: 12rem;
       width: 100%; } }
 
 .header-title {
@@ -104,14 +107,20 @@ header {
   text-transform: uppercase; }
 
 .help-step {
-  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
   max-width: 960px;
-  overflow: auto; }
+  overflow: auto;
+  transition: all 0.2s ease-in-out; }
   .help-step .clean-icon {
-    background-image: url("../../img/help-clean.svg"); }
+    background-image: url("../../img/help-clean.svg");
+    background-position: 0 -1.7rem; }
   .help-step .trash-icon {
-    background-image: url("../../img/help-trash.svg");
-    background-position: 1rem 0px; }
+    background-image: url("../../img/help-trash.svg"); }
+    @media all and (min-width: 55em) {
+      .help-step .trash-icon {
+        background-position: 1rem -1.9rem; } }
   .help-step .help-header,
   .help-step .help-details {
     margin: auto;
@@ -121,8 +130,28 @@ header {
     font-size: 1rem; }
     @media all and (min-width: 55em) {
       .help-step .help-header {
-        margin-top: 4.5rem;
+        margin-top: 3rem;
         width: auto; } }
+    .help-step .help-header:before {
+      content: "";
+      border-radius: 50px;
+      border: 2px solid #D6D8DE;
+      color: #D6D8DE;
+      cursor: default;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 0.5rem;
+      margin-right: 0.5rem;
+      padding: 0.5rem; }
+    .help-step .help-header#step-one:before {
+      content: "1"; }
+    .help-step .help-header#step-two:before {
+      content: "2"; }
+    .help-step .help-header#step-three:before {
+      content: "2"; }
+    .help-step .help-header#step-four:before {
+      content: "2"; }
   .help-step .help-details {
     color: rgba(70, 72, 73, 0.7);
     font-size: 0.9rem;
