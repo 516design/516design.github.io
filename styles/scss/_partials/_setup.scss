@@ -7,8 +7,11 @@ $lato: 'Lato', sans-serif;
 
 $gray: #464849;
 $color-twitter: #60B5F0;
+$color-etsy: #F47E28;
 
-* { box-sizing:border-box; }
+$global-transition: all 0.2s ease-in-out;
+
+* { box-sizing: border-box; }
 
 html {
   font-size: 18px;
@@ -24,14 +27,24 @@ a {
   text-decoration: none;
   font-weight: 600;
   padding-bottom: 0.2rem;
-  transition: all 0.2s ease;
+  transition: $global-transition;
   &:hover {
-    opacity: .8;
+    opacity: .7;
   }
 }
 
-.content {
+header, footer, .content {
   overflow: auto;
+}
+
+footer {
+  border-top: 2px solid #D7D7DA;
+  margin-top: 3rem;
+  text-align: center;
+  p {
+    font-size: 0.8rem;
+    opacity: .3;
+  }
 }
 
 .column {
