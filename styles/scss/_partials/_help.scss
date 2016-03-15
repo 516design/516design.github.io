@@ -1,5 +1,5 @@
 .header-title {
-  color: $gray;
+  color: $c-gray;
   font-weight: 600;
   margin: 0;
   text-align: center;
@@ -7,7 +7,7 @@
 }
 
 .help-step {
-  @extend %card;
+  @extend .card;
   margin: 2rem auto;
   max-width: 960px;
   padding-bottom: 1rem;
@@ -19,25 +19,25 @@
   // }
 
   .clean-icon {
-    @extend %image;
+    @extend .image;
     background-image: url("../../img/help-clean.svg");
     @media #{$desktop} { background-position: 0 -1.7rem; }
   }
 
   .trash-icon {
-    @extend %image;
+    @extend .image;
     background-image: url("../../img/help-trash.svg");
     @media #{$desktop} { background-position: 1rem -1.8rem; }
   }
 
   .apply-icon {
-    @extend %image;
+    @extend .image;
     background-image: url("../../img/help-apply.svg");
     @media #{$desktop} { background-position: 1rem -1.4rem; }
   }
 
   .peel-icon {
-    @extend %image;
+    @extend .image;
     background-image: url("../../img/help-peel.svg");
     @media #{$desktop} { background-position: 1rem -1.4rem; }
   }
@@ -75,7 +75,7 @@
   }
 
   .help-details {
-    color: rgba($gray, .7);
+    color: rgba($c-gray, .7);
     font-size: 0.9rem;
     line-height: 1.4rem;
     @media #{$desktop} {

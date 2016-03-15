@@ -1,0 +1,12 @@
+$phone:         "all and (max-width: 40em)" !default;
+$tablet:        "all and (min-width: 40em)" !default;
+$desktop:       "all and (min-width: 55em)" !default;
+$desktop-large: "all and (min-width: 96em)" !default;
+
+$global-transition: all 0.2s ease-in-out;
+
+$c-white: #FFF;
+$c-black: #000;
+$c-gray: #464849;
+$c-twitter: #60B5F0;
+$c-etsy: #F47E28;

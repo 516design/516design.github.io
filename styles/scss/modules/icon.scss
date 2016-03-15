@@ -1,0 +1,31 @@
+.icon {
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 1px;
+  transition: .2s ease-in-out;
+}
+
+$small-icon: 4.5rem;
+$medium-icon: 6rem;
+$large-icon: 7rem;
+
+.icon--apple {
+  @extend .icon;
+  background-image: url("../../img/icon--apple.svg");
+  padding: 7.5%;
+  top: 36%; right: 42.5%;
+}
+
+.decal__il--d {
+  @extend .icon;
+  background-image: url("../../img/decal__il--d.svg");
+  opacity: 1;
+  z-index: 1;
+  padding: 10%;
+  top: 35%; right: 40%;
+  &:hover {
+    opacity: .5;
+  }
+}

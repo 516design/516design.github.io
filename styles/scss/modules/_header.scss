@@ -1,0 +1,33 @@
+.header {
+  background-color: $c-gray;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0; right: 0; left: 0;
+
+  &--logo {
+    background-image: url("../../img/logo--dark.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    height: 1.7rem; width: 6rem;
+    float: left;
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .nav {
+    display: inline-block;
+
+    &--item {
+      @extend %float-left;
+      color: $c-white;
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      padding: 0.2rem;
+    }
+  }
+}
