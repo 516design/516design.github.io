@@ -1,2 +1,6 @@
-%float-right { float: right; }
-%float-left { float: left; }
+.float-right { float: right; }
+.float-left { float: left; }
+
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+.fixed { position: fixed !important; }

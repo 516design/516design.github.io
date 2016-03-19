@@ -3,5 +3,29 @@
 %l-align-center { text-align: center; }
 
 #header { }
-#content { }
+
+.content {
+  margin: 4rem auto;
+  max-width: 920px;
+  @media #{$tablet} {
+    padding: 1rem;
+  }
+  .macbook {
+    background-color: #D6D6DC;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 60%;
+    width: 90%;
+    @media #{$tablet} {
+      border-radius: 30px;
+    }
+    @media #{$desktop} {
+      padding: 0;
+      height: 25rem;
+      width: 38rem;
+    }
+  }
+}
+
 #footer { }

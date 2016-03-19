@@ -6,17 +6,17 @@
 
   &--full {
     @extend .column;
-    @media #{$desktop} { width: 100%; }    
+    @media #{$tablet} { width: 100%; }    
   }
 
   &--third {
     @extend .column;
-    @media #{$desktop} { width: calc(100% / 3); }
+    @media #{$tablet} { width: calc(100% / 3); }
   }
 
   &--two-thirds {
     @extend .column;
-    @media #{$desktop} {
+    @media #{$tablet} {
       width: calc(200% / 3);
     }
   }

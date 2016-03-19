@@ -1,5 +1,17 @@
 .nav--item {
-  &.-is-active {
-    
+  &--is-active {
+
+  }
+}
+
+.card {
+  &--is-selectable {
+    cursor: pointer;
+    transition: $global-transition;
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+
+      .card--footer { background-color: $c-twitter; }
+    }
   }
 }

@@ -51,10 +51,17 @@
   .help-header {
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    @media #{$desktop} {
+
+    @media #{$tablet} {
       margin-top: 3rem;
+      margin-left: 2rem;
       width: auto;
     }
+
+    @media #{$desktop} {
+      margin-left: 0;
+    }
+
     &:before {
       content: "";
       border-radius: 50px;
@@ -78,8 +85,15 @@
     color: rgba($c-gray, .7);
     font-size: 0.9rem;
     line-height: 1.4rem;
+
+    @media #{$tablet} {
+      margin: 0.8rem 0;
+      margin-left: 2rem;
+    }
+
     @media #{$desktop} {
       margin: 0.8rem 0;
+      margin-left: 0;
     }
   }
 }

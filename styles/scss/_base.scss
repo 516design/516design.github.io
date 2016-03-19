@@ -11,17 +11,23 @@ body {
 
 a {
   color: $c-white;
+  cursor: pointer;
   text-decoration: none;
   font-weight: 600;
   transition: $global-transition;
-  &:hover {
-    opacity: .7;
-  }
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }
 
 p a {
   color: $c-twitter;
   padding-bottom: 0.2rem;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 
 header, footer, .content {
