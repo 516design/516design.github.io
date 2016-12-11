@@ -3,3 +3,70 @@
   background-size: 100%;
   height: 12rem;
 }
+
+.img {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 200px; width: 200px;
+  transition: all 500ms ease-in-out;
+
+  &.img--namastay {
+    background-image: url("../../img/namastay.svg");
+    ~ .card-title {
+      background-color: #1AA8B2;
+      p { color: $white; }
+    }
+  }
+
+  &.img--k2so {
+    background-image: url("../../img/k2so.svg");
+    ~ .card-title {
+      background-color: #6D6E71;
+      p { color: $white; }
+    }
+  }
+
+  &.img--bb8 {
+    background-image: url("../../img/bb8.svg");
+    ~ .card-title {
+      background-color: #DA9654;
+      p { color: $white; }
+    }
+  }
+}
+//     &:not(.img--reverse) {
+//       -webkit-clip-path: inset(0 5% 0 0);
+//       clip-path: inset(0 5% 0 0);
+//     }
+//   }
+//
+//   &.img--reverse {
+//     background-image: url("../../img/namastay-back.svg");
+//     -moz-transform: scaleX(-1);
+//     -o-transform: scaleX(-1);
+//     -webkit-transform: scaleX(-1);
+//     transform: scaleX(-1);
+//     filter: FlipH;
+//     -ms-filter: "FlipH";
+//     -webkit-clip-path: inset(0 0 0 100%);
+//     clip-path: inset(0 0 0 100%);
+//     position: absolute;
+//     top: 0;
+//     right: -145px;
+//   }
+// }
+//
+// .card.is-selectable {
+//   &:hover {
+//     .img--reverse {
+//       -webkit-clip-path: inset(0 0 0 85%);
+//       clip-path: inset(0 0 0 85%);
+//       right: -103px;
+//     }
+//     .img--namastay:not(.img--reverse) {
+//       -webkit-clip-path: inset(0 15% 0 0);
+//       clip-path: inset(0 15% 0 0);
+//     }
+//   }
+// }

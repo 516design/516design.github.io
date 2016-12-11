@@ -1,12 +1,12 @@
 .column {
   float: left;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 100%;
   @media #{$desktop} { padding: 1rem; }
 
   &--full {
     @extend .column;
-    @media #{$tablet} { width: 100%; }    
+    @media #{$tablet} { width: 100%; }
   }
 
   &--third {
