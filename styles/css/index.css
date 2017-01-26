@@ -138,7 +138,7 @@
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 
-.button--icon.button--icon--main, .card.is-selectable:hover, .is-selectable.help-step:hover {
+.button--icon.button--icon--main, .card.is-selectable:hover, .card .review-link:hover, .help-step .review-link:hover, .is-selectable.help-step:hover {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
@@ -1424,14 +1424,14 @@ fieldset .has-warning .message li {
 
 /* Card Styles
   =========================================================================== */
-.card, .help-step {
+.card, .card .review-link, .help-step {
   background-color: #FFFFFF;
   border: 2px solid #D4D4D4;
   border-radius: 10px;
   margin: 1.5rem auto; }
-  .card .card--header hr, .help-step .card--header hr, .card.card--content hr, .card--content.help-step hr, .card.card--footer hr, .card--footer.help-step hr {
+  .card .card--header hr, .help-step .card--header hr, .card.card--content hr, .card .card--content.review-link hr, .card--content.help-step hr, .card.card--footer hr, .card .card--footer.review-link hr, .card--footer.help-step hr {
     margin: 1rem 0; }
-  .card hr, .help-step hr {
+  .card hr, .card .review-link hr, .help-step hr {
     margin: 0; }
   .card .card--header, .help-step .card--header {
     padding: 1rem 1rem 0 1rem;
@@ -1447,11 +1447,11 @@ fieldset .has-warning .message li {
     .card .card--footer.has-border, .help-step .card--footer.has-border {
       border-top: 2px solid #D4D4D4;
       padding-top: 1rem; }
-  .card--header + .card.card--footer, .card--header + .card--footer.help-step {
+  .card--header + .card.card--footer, .card .card--header + .card--footer.review-link, .card--header + .card--footer.help-step {
     padding-top: 1rem; }
-  .card.is-selectable, .is-selectable.help-step {
+  .card.is-selectable, .card .review-link, .help-step .review-link, .is-selectable.help-step {
     transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out; }
-    .card.is-selectable:hover, .is-selectable.help-step:hover {
+    .card.is-selectable:hover, .card .review-link:hover, .help-step .review-link:hover, .is-selectable.help-step:hover {
       border-color: #6A8DD3;
       cursor: pointer; }
 
@@ -1943,7 +1943,7 @@ fieldset .has-warning .message li {
 .relative {
   position: relative !important; }
 
-.absolute, .card .card--footer, .help-step .card--footer {
+.absolute, .card--square .card--footer {
   position: absolute !important; }
 
 .fixed {
@@ -1991,7 +1991,7 @@ footer {
     font-size: 0.8rem;
     opacity: .3; }
 
-.card, .help-step {
+.card, .card .review-link, .help-step {
   background-color: #FFFFFF;
   border: none;
   border-radius: 0;
@@ -2002,19 +2002,80 @@ footer {
   .card--square {
     height: 15rem;
     width: 15rem; }
-  .card .card--footer, .help-step .card--footer {
-    background-color: #6E6E6E;
-    padding: 0.8rem 0;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.2s ease-in-out; }
-    .card .card--footer h3, .help-step .card--footer h3 {
-      color: #FFFFFF;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
+    .card--square .card--footer {
+      background-color: #6E6E6E;
+      padding: 0.8rem 0;
+      text-align: center;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all 0.2s ease-in-out; }
+      .card--square .card--footer h3 {
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+  .card--review {
+    display: inline-block;
+    height: 23rem;
+    width: 16rem; }
+    .card--review .card--content {
+      display: flex;
+      flex-flow: column;
+      flex-grow: 1; }
+  .card .review-image, .help-step .review-image {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 10rem;
+    width: 100%; }
+    .card .review-image.instagram_lizelleg, .help-step .review-image.instagram_lizelleg {
+      background-image: url("../../img/reviews/instagram_lizelleg.jpg");
+      background-position: 0 -3.5rem; }
+  .card .review-author, .help-step .review-author,
+  .card .review-text,
+  .help-step .review-text {
+    line-height: 1.2rem;
+    margin: 0; }
+    .card .review-author .text-instagram, .help-step .review-author .text-instagram, .card .review-author.text-instagram, .help-step .review-author.text-instagram,
+    .card .review-text .text-instagram,
+    .help-step .review-text .text-instagram,
+    .card .review-text.text-instagram,
+    .help-step .review-text.text-instagram {
+      color: #EF9B48; }
+    .card .review-author .text-twitter, .help-step .review-author .text-twitter, .card .review-author.text-twitter, .help-step .review-author.text-twitter,
+    .card .review-text .text-twitter,
+    .help-step .review-text .text-twitter,
+    .card .review-text.text-twitter,
+    .help-step .review-text.text-twitter {
+      color: #60B5F0; }
+    .card .review-author .text-etsy, .help-step .review-author .text-etsy, .card .review-author.text-etsy, .help-step .review-author.text-etsy,
+    .card .review-text .text-etsy,
+    .help-step .review-text .text-etsy,
+    .card .review-text.text-etsy,
+    .help-step .review-text.text-etsy {
+      color: #F47E28; }
+  .card .review-text, .help-step .review-text {
+    font-size: 0.8rem; }
+  .card .review-author, .help-step .review-author {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem; }
+  .card .review-link, .help-step .review-link {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    margin-top: 0.7rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.3rem; }
+    .card .review-link .link-logo, .help-step .review-link .link-logo {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      float: left;
+      height: 20px;
+      margin-right: 0.2rem;
+      width: 20px; }
+      .card .review-link .link-logo.instagram-logo, .help-step .review-link .link-logo.instagram-logo {
+        background-image: url("../../img/reviews/instagram-logo.png"); }
 
 .card-title {
   display: block;
@@ -2157,6 +2218,12 @@ footer {
         padding: 0;
         height: 25rem;
         width: 38rem; } }
+
+.section-header {
+  color: #464849;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem; }
 
 .card--is-selectable {
   cursor: pointer;
