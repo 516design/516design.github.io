@@ -27,7 +27,10 @@
   }
 
   &--review {
-    display: inline-block;
+    display: flex;
+    flex-flow: column;
+    float: left;
+    margin-right: 2rem;
     height: 23rem;
     width: 16rem;
     .card--content {
@@ -53,9 +56,9 @@
     line-height: 1.2rem;
     margin: 0;
 
-    .text-instagram, &.text-instagram { color: $c-instagram; }
-    .text-twitter, &.text-twitter { color: $c-twitter; }
-    .text-etsy, &.text-etsy { color: $c-etsy; }
+    .text-instagram, &.text-instagram, .text-instagram a, &.text-instagram a { color: $c-instagram; }
+    .text-twitter, &.text-twitter, .text-twitter a, &.text-twitter a { color: $c-twitter; }
+    .text-etsy, &.text-etsy, .text-etsy a, &.text-etsy a { color: $c-etsy; }
   }
   .review-text { font-size: 0.8rem; }
   .review-author {
@@ -68,8 +71,10 @@
     @extend .card;
     @extend .is-selectable;
     border-radius: 5px;
+    color: $black;
     display: inline-block;
     font-size: 0.7rem;
+    font-weight: 400;
     line-height: 1.1rem;
     margin-top: 0.7rem;
     padding: 0.3rem 0.5rem 0.3rem 0.3rem;

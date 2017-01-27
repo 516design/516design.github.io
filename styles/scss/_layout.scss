@@ -4,6 +4,16 @@
 
 #header { }
 
+.hero {
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center 3rem;
+  background-image: url("../../img/il_shop.svg");
+  border-bottom: 3px solid $gray-300;
+  height: 258px;
+  width: 100%;
+}
+
 .content {
   margin: 4rem auto;
   max-width: 920px;
@@ -32,7 +42,6 @@
   color: $c-gray;
   font-weight: 700;
   margin-top: 5rem;
-  margin-bottom: 1.5rem;
 }
 
 #footer { }
