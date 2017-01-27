@@ -1,6 +1,7 @@
 %l-float-right { float: right !important; }
 %l-float-left { float: left !important; }
 %l-align-center { text-align: center; }
+$card-count: 5;
 
 #header { }
 
@@ -17,9 +18,7 @@
 .content {
   margin: 4rem auto;
   max-width: 920px;
-  @media #{$tablet} {
-    padding: 1rem;
-  }
+  @media #{$tablet} { padding: 1rem; }
   .macbook {
     background-color: #D6D6DC;
     border-radius: 20px;
@@ -41,7 +40,20 @@
 .section-header {
   color: $c-gray;
   font-weight: 700;
-  margin-top: 5rem;
+  margin-top: 1rem;
+}
+
+.flex-row {
+  padding-left: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+  @media screen and (min-width: 1200px) {
+    padding-left: calc(50% - (1200px/2) + 1.2rem);
+  }
+}
+
+.column--review {
+  width: calc(100% + (288px * #{$card-count}));
 }
 
 #footer { }
