@@ -6,13 +6,16 @@ $card-count: 5;
 #header { }
 
 .hero {
-  background-color: $white;
   background-repeat: no-repeat;
-  background-position: center 3rem;
-  background-image: url("../../img/il_shop.svg");
-  border-bottom: 3px solid $gray-300;
-  height: 258px;
   width: 100%;
+
+  &.hero--home {
+    background-color: $white;
+    background-position: center 3rem;
+    background-image: url("../../img/il_shop.svg");
+    border-bottom: 3px solid $gray-300;
+    height: 258px;
+  }
 }
 
 .content {
