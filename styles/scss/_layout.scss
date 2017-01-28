@@ -44,9 +44,11 @@ $card-count: 5;
 }
 
 .flex-row {
+  display: flex;
+  height: 25rem;
+  overflow-x: auto;
   padding-left: 1rem;
   width: 100%;
-  overflow-x: scroll;
   @media screen and (min-width: 1200px) {
     padding-left: calc(50% - (1200px/2) + 1.2rem);
   }

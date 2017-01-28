@@ -2038,6 +2038,9 @@ footer {
     .card .review-image.instagram_shekira, .help-step .review-image.instagram_shekira {
       background-image: url("../../img/reviews/instagram_shekira.jpg");
       background-position: 0 -4.5rem; }
+    .card .review-image.twitter_coryclubb, .help-step .review-image.twitter_coryclubb {
+      background-image: url("../../img/reviews/twitter_coryclubb.jpg");
+      background-position: 0 -7.7rem; }
     .card .review-image.twitter_uxjw, .help-step .review-image.twitter_uxjw {
       background-image: url("../../img/reviews/twitter_uxjw.jpg");
       background-position: 0 -5.5rem; }
@@ -2261,9 +2264,11 @@ footer {
   margin-top: 1rem; }
 
 .flex-row {
+  display: flex;
+  height: 25rem;
+  overflow-x: auto;
   padding-left: 1rem;
-  width: 100%;
-  overflow-x: scroll; }
+  width: 100%; }
   @media screen and (min-width: 1200px) {
     .flex-row {
       padding-left: calc(50% - (1200px/2) + 1.2rem); } }
