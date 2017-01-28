@@ -2017,6 +2017,7 @@ footer {
         letter-spacing: 1px; }
   .card--review {
     display: flex;
+    flex: 0 0 auto;
     flex-flow: column;
     float: left;
     margin-right: 2rem;
@@ -2029,16 +2030,23 @@ footer {
   .card .review-image, .help-step .review-image {
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 10rem;
+    min-height: 10rem;
     width: 100%; }
     .card .review-image.instagram_lizelleg, .help-step .review-image.instagram_lizelleg {
       background-image: url("../../img/reviews/instagram_lizelleg.jpg");
       background-position: 0 -3.5rem; }
+    .card .review-image.instagram_shekira, .help-step .review-image.instagram_shekira {
+      background-image: url("../../img/reviews/instagram_shekira.jpg");
+      background-position: 0 -4.5rem; }
+    .card .review-image.twitter_uxjw, .help-step .review-image.twitter_uxjw {
+      background-image: url("../../img/reviews/twitter_uxjw.jpg");
+      background-position: 0 -5.5rem; }
   .card .review-author, .help-step .review-author,
   .card .review-text,
   .help-step .review-text {
     line-height: 1.2rem;
-    margin: 0; }
+    margin: 0;
+    overflow: hidden; }
     .card .review-author .text-instagram, .help-step .review-author .text-instagram, .card .review-author.text-instagram, .help-step .review-author.text-instagram, .card .review-author .text-instagram a, .help-step .review-author .text-instagram a, .card .review-author.text-instagram a, .help-step .review-author.text-instagram a,
     .card .review-text .text-instagram,
     .help-step .review-text .text-instagram,
@@ -2093,6 +2101,8 @@ footer {
       width: 20px; }
       .card .review-link .link-logo.instagram-logo, .help-step .review-link .link-logo.instagram-logo {
         background-image: url("../../img/reviews/instagram-logo.png"); }
+      .card .review-link .link-logo.twitter-logo, .help-step .review-link .link-logo.twitter-logo {
+        background-image: url("../../img/reviews/twitter-logo.png"); }
 
 .card-title {
   display: block;
