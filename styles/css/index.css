@@ -2264,6 +2264,7 @@ footer {
   margin-top: 1rem; }
 
 .flex-row {
+  -webkit-overflow-scrolling: touch;
   display: flex;
   height: 25rem;
   overflow-x: auto;
