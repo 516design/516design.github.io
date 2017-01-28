@@ -2277,6 +2277,7 @@ footer {
 
 .hero {
   background-repeat: no-repeat;
+  overflow: hidden;
   width: 100%; }
   .hero.hero--home {
     background-color: #FFFFFF;
