@@ -2044,6 +2044,9 @@ footer {
     .card .review-image.twitter_uxjw, .help-step .review-image.twitter_uxjw {
       background-image: url("../../img/reviews/twitter_uxjw.jpg");
       background-position: 0 -5.5rem; }
+    .card .review-image.twitter_aliabbasjaffri, .help-step .review-image.twitter_aliabbasjaffri {
+      background-image: url("../../img/reviews/twitter_aliabbasjaffri.jpg");
+      background-position: 0 -0.8rem; }
   .card .review-author, .help-step .review-author,
   .card .review-text,
   .help-step .review-text {
@@ -2134,7 +2137,7 @@ footer {
 
 .header {
   background-color: #464849;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -2268,7 +2271,7 @@ footer {
   display: flex;
   height: 25rem;
   overflow-x: auto;
-  padding-left: 1rem;
+  padding-left: 1.1rem;
   width: 100%; }
   @media screen and (min-width: 1200px) {
     .flex-row {
