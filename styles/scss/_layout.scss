@@ -12,10 +12,11 @@ $card-count: 5;
 
   &.hero--home {
     background-color: $white;
-    background-position: center 3rem;
-    background-image: url("../../img/il_shop.svg");
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../img/storefront.svg");
     border-bottom: 3px solid $gray-300;
-    height: 258px;
+    height: 280px;
   }
 }
 
