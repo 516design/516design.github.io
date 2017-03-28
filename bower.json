@@ -1,0 +1,17 @@
+{
+  "name": "516design.github.io",
+  "homepage": "https://github.com/516design/516design.github.io",
+  "authors": [
+    "Jared Rauh <jared.rauh@samaritanministries.org>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
