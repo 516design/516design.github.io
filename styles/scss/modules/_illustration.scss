@@ -8,65 +8,31 @@
   background-size: 100%;
   background-repeat: no-repeat;
   margin: auto;
-  height: 200px; width: 200px;
-  transition: all 500ms ease-in-out;
+  height: 80%; width: 80%;
+  transition: $global-transition;
 
-  &.img--namastay {
-    background-image: url("../../img/namastay.svg");
-    ~ .card-title {
-      background-color: #1AA8B2;
-      p { color: $white; }
-    }
+  .body--store & {
+    background-position: center;
+    height: $store-card--phone;
+    opacity: .95;
+    &:hover { opacity: 1; }
+
+    @media #{$tablet} { height: $store-card--tablet; }
+    @media #{$desktop} { height: $store-card--desktop; }
   }
 
-  &.img--k2so {
-    background-image: url("../../img/k2so.svg");
-    ~ .card-title {
-      background-color: #6D6E71;
-      p { color: $white; }
-    }
-  }
+  #lightsaber & { background-image: url("../../img/shop/lightsaber.svg"); }
+  #jengo & { background-image: url("../../img/shop/jengo.svg"); }
+  #boba & { background-image: url("../../img/shop/boba.svg"); }
+  #superman & { background-image: url("../../img/shop/superman.svg"); }
+  #pokemon & { background-image: url("../../img/shop/pokemon.svg"); }
+  #captain & { background-image: url("../../img/shop/captain.svg"); }
 
-  &.img--bb8 {
-    background-image: url("../../img/bb8.svg");
-    ~ .card-title {
-      background-color: #DA9654;
-      p { color: $white; }
-    }
-  }
+  //Stickers
+  #bb8 & { background-image: url("../../img/bb8.svg"); }
+  #k2so & { background-image: url("../../img/k2so.svg"); }
+  #r2d2 & { background-image: url("../../img/shop/r2d2.svg"); }
+  #apple-gum & { background-image: url("../../img/shop/apple-gum.svg"); }
+  #classic & { background-image: url("../../img/shop/classic.svg"); }
+  #namastay & { background-image: url("../../img/namastay.svg"); }
 }
-//     &:not(.img--reverse) {
-//       -webkit-clip-path: inset(0 5% 0 0);
-//       clip-path: inset(0 5% 0 0);
-//     }
-//   }
-//
-//   &.img--reverse {
-//     background-image: url("../../img/namastay-back.svg");
-//     -moz-transform: scaleX(-1);
-//     -o-transform: scaleX(-1);
-//     -webkit-transform: scaleX(-1);
-//     transform: scaleX(-1);
-//     filter: FlipH;
-//     -ms-filter: "FlipH";
-//     -webkit-clip-path: inset(0 0 0 100%);
-//     clip-path: inset(0 0 0 100%);
-//     position: absolute;
-//     top: 0;
-//     right: -145px;
-//   }
-// }
-//
-// .card.is-selectable {
-//   &:hover {
-//     .img--reverse {
-//       -webkit-clip-path: inset(0 0 0 85%);
-//       clip-path: inset(0 0 0 85%);
-//       right: -103px;
-//     }
-//     .img--namastay:not(.img--reverse) {
-//       -webkit-clip-path: inset(0 15% 0 0);
-//       clip-path: inset(0 15% 0 0);
-//     }
-//   }
-// }

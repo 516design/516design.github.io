@@ -1,4 +1,17 @@
 .card {
+  .body--store & {
+    background-color: #E0E1E5;
+    border-radius: 20px;
+    box-shadow: none;
+    height: $store-card--phone; width: $store-card--phone;
+    transition: $global-transition;
+    &:hover { background-color: #56575A; }
+    @media #{$tablet} { height: $store-card--tablet; width: $store-card--tablet; }
+    @media #{$desktop} { height: $store-card--desktop; width: $store-card--desktop; }
+  }
+}
+
+.card {
   background-color: $white;
   border: none;
   border-radius: 0;
@@ -114,6 +127,5 @@
   display: block;
   padding: 0.5rem;
   overflow: auto;
-  background-color: #d7d7da;
   p { margin: 0.5rem 0 0 0.5rem; }
 }

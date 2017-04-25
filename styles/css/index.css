@@ -2109,6 +2109,8 @@ html {
 
 body {
   background-color: rgba(214, 216, 222, 0.5); }
+  body.body--store {
+    background-color: #FFFFFF; }
 
 a {
   color: #FFF;
@@ -2141,6 +2143,24 @@ footer {
   footer p {
     font-size: 0.8rem;
     opacity: .3; }
+
+.body--store .card, .body--store .card .review-link, .card .body--store .review-link, .body--store .help-step {
+  background-color: #E0E1E5;
+  border-radius: 20px;
+  box-shadow: none;
+  height: 180px;
+  width: 180px;
+  transition: all 0.2s ease-in-out; }
+  .body--store .card:hover, .body--store .card .review-link:hover, .card .body--store .review-link:hover, .body--store .help-step:hover {
+    background-color: #56575A; }
+  @media all and (min-width: 40em) {
+    .body--store .card, .body--store .card .review-link, .card .body--store .review-link, .body--store .help-step {
+      height: 220px;
+      width: 220px; } }
+  @media all and (min-width: 64em) {
+    .body--store .card, .body--store .card .review-link, .card .body--store .review-link, .body--store .help-step {
+      height: 274px;
+      width: 274px; } }
 
 .card, .card .review-link, .help-step {
   background-color: #FFFFFF;
@@ -2265,8 +2285,7 @@ footer {
 .card-title {
   display: block;
   padding: 0.5rem;
-  overflow: auto;
-  background-color: #d7d7da; }
+  overflow: auto; }
   .card-title p {
     margin: 0.5rem 0 0 0.5rem; }
 
@@ -2289,7 +2308,6 @@ footer {
 
 .header {
   background-color: #464849;
-  padding: 0.5rem 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -2301,7 +2319,8 @@ footer {
     cursor: pointer;
     height: 1.7rem;
     width: 6rem;
-    float: left; }
+    float: left;
+    margin: 0.6rem 0.8rem 0 0; }
     .header--logo:hover {
       opacity: .7; }
   .header .nav {
@@ -2312,9 +2331,9 @@ footer {
       display: inline-block;
       font-size: 1rem;
       font-weight: 400;
-      margin-left: 1rem;
-      text-transform: uppercase;
-      padding: 0.2rem; }
+      margin: 0 0.2rem;
+      padding: 0.8rem;
+      text-transform: uppercase; }
 
 .twitter-icon {
   background-repeat: no-repeat;
@@ -2360,27 +2379,45 @@ footer {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: auto;
-  height: 200px;
-  width: 200px;
-  transition: all 500ms ease-in-out; }
-  .img.img--namastay {
-    background-image: url("../../img/namastay.svg"); }
-    .img.img--namastay ~ .card-title {
-      background-color: #1AA8B2; }
-      .img.img--namastay ~ .card-title p {
-        color: #FFFFFF; }
-  .img.img--k2so {
-    background-image: url("../../img/k2so.svg"); }
-    .img.img--k2so ~ .card-title {
-      background-color: #6D6E71; }
-      .img.img--k2so ~ .card-title p {
-        color: #FFFFFF; }
-  .img.img--bb8 {
+  height: 80%;
+  width: 80%;
+  transition: all 0.2s ease-in-out; }
+  .body--store .img {
+    background-position: center;
+    height: 180px;
+    opacity: .95; }
+    .body--store .img:hover {
+      opacity: 1; }
+    @media all and (min-width: 40em) {
+      .body--store .img {
+        height: 220px; } }
+    @media all and (min-width: 64em) {
+      .body--store .img {
+        height: 274px; } }
+  #lightsaber .img {
+    background-image: url("../../img/shop/lightsaber.svg"); }
+  #jengo .img {
+    background-image: url("../../img/shop/jengo.svg"); }
+  #boba .img {
+    background-image: url("../../img/shop/boba.svg"); }
+  #superman .img {
+    background-image: url("../../img/shop/superman.svg"); }
+  #pokemon .img {
+    background-image: url("../../img/shop/pokemon.svg"); }
+  #captain .img {
+    background-image: url("../../img/shop/captain.svg"); }
+  #bb8 .img {
     background-image: url("../../img/bb8.svg"); }
-    .img.img--bb8 ~ .card-title {
-      background-color: #DA9654; }
-      .img.img--bb8 ~ .card-title p {
-        color: #FFFFFF; }
+  #k2so .img {
+    background-image: url("../../img/k2so.svg"); }
+  #r2d2 .img {
+    background-image: url("../../img/shop/r2d2.svg"); }
+  #apple-gum .img {
+    background-image: url("../../img/shop/apple-gum.svg"); }
+  #classic .img {
+    background-image: url("../../img/shop/classic.svg"); }
+  #namastay .img {
+    background-image: url("../../img/namastay.svg"); }
 
 .hero--macbook {
   background-image: url("../../img/slate-background.jpg");
@@ -2430,13 +2467,20 @@ footer {
   background-repeat: no-repeat;
   overflow: hidden;
   width: 100%; }
-  .hero.hero--home {
+  .hero.hero--home, .hero.hero--airpod {
     background-color: #FFFFFF;
     background-position: center;
     background-size: cover;
-    background-image: url("../../img/storefront.svg");
     border-bottom: 3px solid #BABABA;
     height: 280px; }
+  .hero.hero--home {
+    background-image: url("../../img/storefront.svg"); }
+  .hero.hero--airpod {
+    background-image: url("../../img/hero--airpod.svg");
+    background-position: center 1rem; }
+    @media all and (min-width: 64em) {
+      .hero.hero--airpod {
+        background-position: center 1rem; } }
 
 .content {
   margin: 4rem auto;
@@ -2478,6 +2522,29 @@ footer {
 
 .column--review {
   width: calc(100% + (288px * 5)); }
+
+.body--store .content {
+  text-align: center; }
+
+.shop-item {
+  display: inline-block;
+  margin: 0 0.5rem 2rem 0.5rem; }
+
+.shop-header {
+  border-bottom: 3px solid #e0e1e5;
+  margin: 1rem 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left; }
+  .shop-header:not(:first-of-type) {
+    margin-top: 6rem; }
+
+.shop-button {
+  border-bottom: 3px solid #436fc7;
+  float: right;
+  margin-top: 0.3rem; }
+
+.nav--item.is-active {
+  background-color: #6A8DD3; }
 
 .card--is-selectable {
   cursor: pointer;

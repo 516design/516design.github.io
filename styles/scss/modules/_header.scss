@@ -1,6 +1,5 @@
 .header {
   background-color: $c-gray;
-  padding: 0.5rem 0;
   position: absolute;
   top: 0; right: 0; left: 0;
 
@@ -11,6 +10,7 @@
     cursor: pointer;
     height: 1.7rem; width: 6rem;
     float: left;
+    margin: 0.6rem 0.8rem 0 0;
     &:hover {
       opacity: .7;
     }
@@ -26,9 +26,9 @@
       display: inline-block;
       font-size: 1rem;
       font-weight: 400;
-      margin-left: 1rem;
+      margin: 0 0.2rem;
+      padding: 0.8rem;
       text-transform: uppercase;
-      padding: 0.2rem;
     }
   }
 }

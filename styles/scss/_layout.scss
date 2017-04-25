@@ -10,13 +10,22 @@ $card-count: 5;
   overflow: hidden;
   width: 100%;
 
-  &.hero--home {
+  &.hero--home,
+  &.hero--airpod {
     background-color: $white;
     background-position: center;
     background-size: cover;
-    background-image: url("../../img/storefront.svg");
     border-bottom: 3px solid $gray-300;
     height: 280px;
+  }
+
+  &.hero--home { background-image: url("../../img/storefront.svg"); }
+  &.hero--airpod {
+    background-image: url("../../img/hero--airpod.svg");
+    background-position: center 1rem;
+    @media #{$desktop} {
+      background-position: center 1rem;
+    }
   }
 }
 
@@ -62,6 +71,30 @@ $card-count: 5;
 
 .column--review {
   width: calc(100% + (288px * #{$card-count}));
+}
+
+//SHOP STYLES
+.body--store .content {
+  text-align: center;
+}
+.shop-item {
+  display: inline-block;
+  margin: 0 0.5rem 2rem 0.5rem;
+}
+
+.shop-header {
+  border-bottom: 3px solid #e0e1e5;
+  margin: 1rem 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+
+  &:not(:first-of-type) { margin-top: 6rem; }
+}
+
+.shop-button {
+  border-bottom: 3px solid #436fc7;
+  float: right;
+  margin-top: 0.3rem;
 }
 
 #footer { }
