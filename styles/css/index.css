@@ -2418,6 +2418,18 @@ footer {
     background-image: url("../../img/shop/classic.svg"); }
   #namastay .img {
     background-image: url("../../img/namastay.svg"); }
+  #bb8-decal .img {
+    background-image: url("../../img/shop/bb8-decal.svg"); }
+  #r2d2-decal .img {
+    background-image: url("../../img/shop/r2d2-decal.svg"); }
+  #stormtrooper-decal .img {
+    background-image: url("../../img/shop/stormtrooper-decal.svg"); }
+  #texas .img {
+    background-image: url("../../img/shop/texas.svg"); }
+  #wisconsin .img {
+    background-image: url("../../img/shop/wisconsin.svg"); }
+  #golf .img {
+    background-image: url("../../img/shop/golf.svg"); }
 
 .hero--macbook {
   background-image: url("../../img/slate-background.jpg");
