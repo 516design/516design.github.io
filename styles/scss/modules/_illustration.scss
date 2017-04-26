@@ -11,7 +11,7 @@
   height: 80%; width: 80%;
   transition: $global-transition;
 
-  .body--store & {
+  .content--store & {
     background-position: center;
     height: $store-card--phone;
     opacity: .95;

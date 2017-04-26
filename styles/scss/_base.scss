@@ -7,7 +7,7 @@ html {
 
 body {
   background-color: rgba(#D6D8DE, .5);
-  &.body--store { background-color: $white; }
+  &.white-background { background-color: $white; }
 }
 
 a {
@@ -43,7 +43,6 @@ ul, ol {
 
 footer {
   border-top: 2px solid #D7D7DA;
-  margin-top: 3rem;
   text-align: center;
   p {
     font-size: 0.8rem;

@@ -15,7 +15,7 @@ $card-count: 5;
     background-color: $white;
     background-position: center;
     background-size: cover;
-    border-bottom: 3px solid $gray-300;
+    border-bottom: 3px solid #5B5D5D;
     height: 280px;
   }
 
@@ -48,6 +48,15 @@ $card-count: 5;
       height: 25rem;
       width: 38rem;
     }
+  }
+
+  &.content--store { text-align: center; }
+}
+
+.section {
+  &.section--review {
+    background-color: $gray-100;
+    padding-bottom: 2rem;
   }
 }
 

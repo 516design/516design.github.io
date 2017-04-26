@@ -2109,7 +2109,7 @@ html {
 
 body {
   background-color: rgba(214, 216, 222, 0.5); }
-  body.body--store {
+  body.white-background {
     background-color: #FFFFFF; }
 
 a {
@@ -2138,27 +2138,26 @@ ul, ol {
 
 footer {
   border-top: 2px solid #D7D7DA;
-  margin-top: 3rem;
   text-align: center; }
   footer p {
     font-size: 0.8rem;
     opacity: .3; }
 
-.body--store .card, .body--store .card .review-link, .card .body--store .review-link, .body--store .help-step {
+.content--store .card, .content--store .card .review-link, .card .content--store .review-link, .content--store .help-step {
   background-color: #E0E1E5;
   border-radius: 20px;
   box-shadow: none;
   height: 180px;
   width: 180px;
   transition: all 0.2s ease-in-out; }
-  .body--store .card:hover, .body--store .card .review-link:hover, .card .body--store .review-link:hover, .body--store .help-step:hover {
+  .content--store .card:hover, .content--store .card .review-link:hover, .card .content--store .review-link:hover, .content--store .help-step:hover {
     background-color: #56575A; }
   @media all and (min-width: 40em) {
-    .body--store .card, .body--store .card .review-link, .card .body--store .review-link, .body--store .help-step {
+    .content--store .card, .content--store .card .review-link, .card .content--store .review-link, .content--store .help-step {
       height: 220px;
       width: 220px; } }
   @media all and (min-width: 64em) {
-    .body--store .card, .body--store .card .review-link, .card .body--store .review-link, .body--store .help-step {
+    .content--store .card, .content--store .card .review-link, .card .content--store .review-link, .content--store .help-step {
       height: 274px;
       width: 274px; } }
 
@@ -2382,17 +2381,17 @@ footer {
   height: 80%;
   width: 80%;
   transition: all 0.2s ease-in-out; }
-  .body--store .img {
+  .content--store .img {
     background-position: center;
     height: 180px;
     opacity: .95; }
-    .body--store .img:hover {
+    .content--store .img:hover {
       opacity: 1; }
     @media all and (min-width: 40em) {
-      .body--store .img {
+      .content--store .img {
         height: 220px; } }
     @media all and (min-width: 64em) {
-      .body--store .img {
+      .content--store .img {
         height: 274px; } }
   #lightsaber .img {
     background-image: url("../../img/shop/lightsaber.svg"); }
@@ -2483,7 +2482,7 @@ footer {
     background-color: #FFFFFF;
     background-position: center;
     background-size: cover;
-    border-bottom: 3px solid #BABABA;
+    border-bottom: 3px solid #5B5D5D;
     height: 280px; }
   .hero.hero--home {
     background-image: url("../../img/storefront.svg"); }
@@ -2515,6 +2514,12 @@ footer {
         padding: 0;
         height: 25rem;
         width: 38rem; } }
+  .content.content--store {
+    text-align: center; }
+
+.section.section--review {
+  background-color: #EDEDED;
+  padding-bottom: 2rem; }
 
 .section-header {
   color: #464849;
