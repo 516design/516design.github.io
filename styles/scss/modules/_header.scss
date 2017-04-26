@@ -16,16 +16,16 @@
     }
   }
 
-  .nav {
+  li {
     display: inline-block;
     float: left;
 
-    &--item {
+    .nav--item {
       @extend .float-left;
       color: $c-white;
       display: inline-block;
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 600;
       margin: 0 0.2rem;
       padding: 0.8rem;
       text-transform: uppercase;

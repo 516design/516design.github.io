@@ -86,9 +86,23 @@ $card-count: 5;
 .body--store .content {
   text-align: center;
 }
+
 .shop-item {
   display: inline-block;
   margin: 0 0.5rem 2rem 0.5rem;
+  .shop-item--title {
+    float: left;
+    font-weight: 600;
+    color: #5B5D5D;
+    padding: 0.2rem 0.5rem 0.2rem 0;
+  }
+  .shop-item--price {
+    background-color: rgba(167, 211, 238, 0.6);
+    float: right;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+  }
 }
 
 .shop-header {

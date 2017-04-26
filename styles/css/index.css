@@ -78,7 +78,7 @@
 .remove-border {
   border: none !important; }
 
-.float-left, .header .nav--item {
+.float-left, .header li .nav--item {
   float: left !important; }
 
 .float-right {
@@ -2088,7 +2088,7 @@ fieldset .has-warning .message li {
 .float-right {
   float: right; }
 
-.float-left, .header .nav--item {
+.float-left, .header li .nav--item {
   float: left; }
 
 .relative {
@@ -2322,14 +2322,14 @@ footer {
     margin: 0.6rem 0.8rem 0 0; }
     .header--logo:hover {
       opacity: .7; }
-  .header .nav {
+  .header li {
     display: inline-block;
     float: left; }
-    .header .nav--item {
+    .header li .nav--item {
       color: #FFF;
       display: inline-block;
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 600;
       margin: 0 0.2rem;
       padding: 0.8rem;
       text-transform: uppercase; }
@@ -2546,6 +2546,17 @@ footer {
 .shop-item {
   display: inline-block;
   margin: 0 0.5rem 2rem 0.5rem; }
+  .shop-item .shop-item--title {
+    float: left;
+    font-weight: 600;
+    color: #5B5D5D;
+    padding: 0.2rem 0.5rem 0.2rem 0; }
+  .shop-item .shop-item--price {
+    background-color: rgba(167, 211, 238, 0.6);
+    float: right;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px; }
 
 .shop-header {
   border-bottom: 3px solid #e0e1e5;
