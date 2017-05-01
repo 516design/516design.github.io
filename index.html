@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="styles/css/index.css">
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,7 +39,16 @@
     <!-- Vinyl Decals -->
     <h1 class="shop-header">
       Vinyl Decals
-      <a class="shop-button button button--smooth button--small">View More</a>
+      <button id="button--vinyl" class="shop-button button button--smooth button--small">View More</button>
+
+      <!-- Modal content -->
+      <div id="modal--vinyl" class="modal">
+        <div class="modal-content">
+          <button class="button button--gray button--smooth modal-close">&times;</button>
+          <div id="modal-content--vinyl"></div>
+        </div>
+
+      </div>
     </h1>
 
     <div class="shop-item" id="bb8-decal">
@@ -315,6 +326,7 @@
   <footer class="column">
     <p>&copy;2017 516Design</p>
   </footer>
+  <script src="scripts/scripts.js"></script>
 
 </body>
 </html>
