@@ -2285,8 +2285,6 @@ footer {
   display: block;
   padding: 0.5rem;
   overflow: auto; }
-  .card-title p {
-    margin: 0.5rem 0 0 0.5rem; }
 
 .column, .column--full, .column--third, .column--two-thirds {
   float: left;
@@ -2585,16 +2583,29 @@ footer {
   display: inline-block;
   margin: 0 0.5rem 2rem 0.5rem; }
   .shop-item .shop-item--title {
+    display: flex;
     float: left;
-    font-weight: 600;
-    color: #5B5D5D;
-    padding: 0.2rem 0.5rem 0.2rem 0; }
+    max-width: 7rem;
+    text-align: left;
+    white-space: nowrap; }
+    @media all and (min-width: 40em) {
+      .shop-item .shop-item--title {
+        max-width: 10rem; } }
+    .shop-item .shop-item--title p {
+      float: left;
+      font-weight: 600;
+      color: #5B5D5D;
+      padding: 0.2rem 0.5rem 0.2rem 0;
+      margin: 0;
+      text-overflow: ellipsis;
+      overflow: hidden; }
   .shop-item .shop-item--price {
     background-color: rgba(167, 211, 238, 0.6);
     float: right;
     font-weight: 600;
     padding: 0.2rem 0.5rem;
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin: 0; }
 
 .shop-header {
   border-bottom: 3px solid #e0e1e5;

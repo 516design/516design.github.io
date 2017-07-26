@@ -91,10 +91,21 @@ $card-count: 5;
   display: inline-block;
   margin: 0 0.5rem 2rem 0.5rem;
   .shop-item--title {
+    display: flex;
     float: left;
-    font-weight: 600;
-    color: #5B5D5D;
-    padding: 0.2rem 0.5rem 0.2rem 0;
+    max-width: 7rem;
+    text-align: left;
+    white-space: nowrap;
+    @media #{$tablet} { max-width: 10rem; }
+    p {
+      float: left;
+      font-weight: 600;
+      color: #5B5D5D;
+      padding: 0.2rem 0.5rem 0.2rem 0;
+      margin: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
   .shop-item--price {
     background-color: rgba(167, 211, 238, 0.6);
@@ -102,6 +113,7 @@ $card-count: 5;
     font-weight: 600;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
+    margin: 0;
   }
 }
 
