@@ -2332,6 +2332,30 @@ footer {
       padding: 0.8rem;
       text-transform: uppercase; }
 
+.button, .file-custom .file-custom--button {
+  background-color: #4AA0D4;
+  color: #FFFFFF; }
+  .button:hover, .file-custom .file-custom--button:hover, .button:focus, .file-custom .file-custom--button:focus {
+    background-color: #429cd2;
+    color: #FFFFFF; }
+  .button:focus, .file-custom .file-custom--button:focus {
+    background-color: #2d87be; }
+  .button:active, .file-custom .file-custom--button:active {
+    background-color: #2879a9; }
+  .button:not(.button--transparent) .dashing-icon:before, .file-custom .file-custom--button:not(.button--transparent) .dashing-icon:before, .button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button:not(.button--transparent) .button--navigation:before, .file-custom .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .file-custom--button:not(.button--transparent) .button--navigation:before {
+    color: #FFFFFF; }
+
+.shop-button {
+  float: right;
+  border: 6px solid #FFFFFF;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0px 1px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+  .shop-button:hover, .shop-button:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.1); }
+
 .twitter-icon {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2417,6 +2441,8 @@ footer {
     background-image: url("../../img/namastay.svg"); }
   #paddles .img {
     background-image: url("../../img/shop/paddles.svg"); }
+  #love-all .img {
+    background-image: url("../../img/shop/love-all.svg"); }
   #bb8-decal .img {
     background-image: url("../../img/shop/bb8-decal.svg"); }
   #r2d2-decal .img {
@@ -2497,7 +2523,9 @@ footer {
   text-align: center; }
 
 /* The Close Button */
-.modal-close {
+.modal-close,
+.modal-sticker-close,
+.modal-vinyl-close {
   color: #6f6f6f !important;
   font-size: 1.2rem;
   font-weight: bold;
@@ -2507,7 +2535,11 @@ footer {
   padding: 4px 12px; }
 
 .modal-close:hover,
-.modal-close:focus {
+.modal-close:focus,
+.modal-sticker-close:hover,
+.modal-sticker-close:focus,
+.modal-vinyl-close:hover,
+.modal-vinyl-close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer; }
@@ -2617,13 +2649,8 @@ footer {
   .shop-header:not(:first-of-type) {
     margin-top: 6rem; }
 
-.shop-button {
-  border-bottom: 3px solid #436fc7;
-  float: right;
-  margin-top: 0.3rem; }
-
 .nav--item.is-active {
-  background-color: #6A8DD3; }
+  background-color: #4AA0D4; }
 
 .card--is-selectable {
   cursor: pointer;

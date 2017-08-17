@@ -24,7 +24,9 @@
 }
 
 /* The Close Button */
-.modal-close {
+.modal-close,
+.modal-sticker-close,
+.modal-vinyl-close {
   color: #6f6f6f !important;
   font-size: 1.2rem;
   font-weight: bold;
@@ -35,7 +37,11 @@
 }
 
 .modal-close:hover,
-.modal-close:focus {
+.modal-close:focus,
+.modal-sticker-close:hover,
+.modal-sticker-close:focus,
+.modal-vinyl-close:hover,
+.modal-vinyl-close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

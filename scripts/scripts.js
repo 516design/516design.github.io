@@ -1,29 +1,35 @@
 // Get the modal
-var modal = document.getElementById('modal--vinyl');
+var modalVinyl = document.getElementById('modal--vinyl');
+var modalSticker = document.getElementById('modal--sticker');
 
 // Get the button that opens the modal
-var btn = document.getElementById("button--vinyl");
+var btnVinyl = document.getElementById("button--vinyl");
+var btnSticker = document.getElementById("button--sticker");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal-close")[0];
+var spanVinyl = document.getElementsByClassName("modal-vinyl-close")[0];
+var spanSticker = document.getElementsByClassName("modal-sticker-close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+btnVinyl.onclick = function() { modalVinyl.style.display = "block"; }
+btnSticker.onclick = function() { modalSticker.style.display = "block"; }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+spanVinyl.onclick = function() { modalVinyl.style.display = "none"; }
+spanSticker.onclick = function() { modalSticker.style.display = "none"; }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
+  if (event.target == modalVinyl) {
+      modalVinyl.style.display = "none";
   }
 }
 
-$(function() {
-  $('#modal-content--vinyl').load('vinyl.html');
-});
+window.onclick = function(event) {
+  if (event.target == modalSticker) {
+      modalSticker.style.display = "none";
+  }
+}
+
+$(function() { $('#modal-content--vinyl').load('vinyl.html'); });
+$(function() { $('#modal-content--sticker').load('sticker.html'); });

@@ -39,7 +39,15 @@
     <!-- Stickers -->
     <h1 class="shop-header">
       Stickers
-      <button class="shop-button button--smooth button--small">View More</button>
+      <button id="button--sticker" class="button shop-button button--smooth button--small">View More</button>
+
+      <!-- Modal content -->
+      <div id="modal--sticker" class="modal">
+        <div class="modal-content">
+          <button class="button button--gray button--smooth modal-sticker-close">&times;</button>
+          <div id="modal-content--sticker"></div>
+        </div>
+      </div>
     </h1>
 
     <div class="shop-item" id="paddles">
@@ -48,6 +56,16 @@
       </a>
       <div class="card-title">
         <span class="shop-item--title"><p>Paddles</p></span>
+        <p class="shop-item--price">$4</p>
+      </div>
+    </div>
+
+    <div class="shop-item" id="love-all">
+      <a class="card is-selectable" href="#" target="_blank">
+        <div class="img"></div>
+      </a>
+      <div class="card-title">
+        <span class="shop-item--title"><p>Love All</p></span>
         <p class="shop-item--price">$4</p>
       </div>
     </div>
@@ -92,25 +110,15 @@
       </div>
     </div>
 
-    <div class="shop-item" id="apple-gum">
-      <a class="card is-selectable" href="http://etsy.me/2nHcah5" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Apple Gum</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
     <!-- Vinyl Decals -->
     <h1 class="shop-header">
       Vinyl Decals
-      <button id="button--vinyl" class="shop-button button button--smooth button--small">View More</button>
+      <button id="button--vinyl" class="button shop-button button button--smooth button--small">View More</button>
 
       <!-- Modal content -->
       <div id="modal--vinyl" class="modal">
         <div class="modal-content">
-          <button class="button button--gray button--smooth modal-close">&times;</button>
+          <button class="button button--gray button--smooth modal-vinyl-close">&times;</button>
           <div id="modal-content--vinyl"></div>
         </div>
 
@@ -180,7 +188,6 @@
     <!-- Colored Decals -->
     <h1 class="shop-header">
       Colored Decals
-      <button class="shop-button button--smooth button--small">View More</button>
     </h1>
 
     <div class="shop-item" id="lightsaber">
