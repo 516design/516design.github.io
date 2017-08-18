@@ -33,3 +33,15 @@ window.onclick = function(event) {
 
 $(function() { $('#modal-content--vinyl').load('vinyl.html'); });
 $(function() { $('#modal-content--sticker').load('sticker.html'); });
+
+var modalPaddle = document.getElementById('modal--paddle');
+var btnPaddle = document.getElementById("button--paddle");
+var spanPaddle = document.getElementById("close--paddle");
+btnPaddle.onclick = function() { modalPaddle.style.display = "block"; }
+spanPaddle.onclick = function() { modalPaddle.style.display = "none"; }
+window.onclick = function(event) {
+  if (event.target == modalPaddle) {
+    modalPaddle.style.display = "none";
+  }
+}
+$(function() { $('#modal-content--paddle').load('templates/shop/paddle.html'); });

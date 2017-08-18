@@ -11,6 +11,43 @@
   overflow: auto;
 }
 
+.modal.modal--product {
+  .modal-content {
+    margin-top: 2rem;
+    max-width: 40rem;
+    padding: 0;
+    overflow: hidden;
+
+    .modal-item {
+      background-color: #E0E1E5;
+      float: left;
+      padding: 0.5rem;
+      width: 100%;
+
+      @media (min-width: 760px) {
+        padding: 2rem;
+        width: 20rem;
+      }
+    }
+
+    .details-container {
+      float: right;
+      padding: 1rem;
+      text-align: left;
+      width: 100%;
+      @media (min-width: 760px) {
+        width: 20rem;
+      }
+    }
+  }
+}
+
+.img.img--modal {
+  background-size: contain;
+  height: $store-card--tablet !important;
+  @media #{$tablet} { height: $store-card--desktop !important; }
+}
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #FFFFFF;
@@ -21,6 +58,7 @@
   // height: calc(100% - 2rem);
   height: auto;
   text-align: center;
+  position: relative;
 }
 
 /* The Close Button */
@@ -31,8 +69,8 @@
   font-size: 1.2rem;
   font-weight: bold;
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
+  right: 0.5rem;
+  top: 0.5rem;
   padding: 4px 12px;
 }
 

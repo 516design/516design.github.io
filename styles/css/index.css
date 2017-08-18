@@ -2336,25 +2336,37 @@ footer {
   background-color: #4AA0D4;
   color: #FFFFFF; }
   .button:hover, .file-custom .file-custom--button:hover, .button:focus, .file-custom .file-custom--button:focus {
-    background-color: #429cd2;
+    background-color: #3595cf;
     color: #FFFFFF; }
-  .button:focus, .file-custom .file-custom--button:focus {
-    background-color: #2d87be; }
   .button:active, .file-custom .file-custom--button:active {
-    background-color: #2879a9; }
+    background-color: #2e8ac2; }
   .button:not(.button--transparent) .dashing-icon:before, .file-custom .file-custom--button:not(.button--transparent) .dashing-icon:before, .button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button:not(.button--transparent) .button--navigation:before, .file-custom .file-custom--button:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .file-custom .file-custom--button:not(.button--transparent) .button--navigation:before {
     color: #FFFFFF; }
 
-.shop-button {
+.shop-button, .button--buy-now {
   float: right;
-  border: 6px solid #FFFFFF;
-  border-radius: 10px !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0px 1px rgba(0, 0, 0, 0.2);
+  border: 3px solid #FFFFFF;
+  border-radius: 6px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.14), 0 -2px 12px rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0.6rem 0.8rem;
   transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
-  .shop-button:hover, .shop-button:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.1); }
+  .shop-button:hover, .button--buy-now:hover, .shop-button:focus, .button--buy-now:focus {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2), 0 0px 8px rgba(0, 0, 0, 0.2); }
+  .shop-button:active, .button--buy-now:active {
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.14), 0 0px 4px rgba(0, 0, 0, 0.1); }
+
+.button--buy-now {
+  background-color: #82ba37;
+  color: #FFFFFF;
+  float: left; }
+  .button--buy-now:hover, .button--buy-now:focus {
+    background-color: #74a631;
+    color: #FFFFFF; }
+  .button--buy-now:active {
+    background-color: #69972d; }
+  .button--buy-now:not(.button--transparent) .dashing-icon:before, .button--buy-now:not(.button--transparent) .app-menu .app-context .app-title .button--navigation:before, .app-menu .app-context .app-title .button--buy-now:not(.button--transparent) .button--navigation:before {
+    color: #FFFFFF; }
 
 .twitter-icon {
   background-repeat: no-repeat;
@@ -2512,6 +2524,36 @@ footer {
   bottom: 0;
   overflow: auto; }
 
+.modal.modal--product .modal-content {
+  margin-top: 2rem;
+  max-width: 40rem;
+  padding: 0;
+  overflow: hidden; }
+  .modal.modal--product .modal-content .modal-item {
+    background-color: #E0E1E5;
+    float: left;
+    padding: 0.5rem;
+    width: 100%; }
+    @media (min-width: 760px) {
+      .modal.modal--product .modal-content .modal-item {
+        padding: 2rem;
+        width: 20rem; } }
+  .modal.modal--product .modal-content .details-container {
+    float: right;
+    padding: 1rem;
+    text-align: left;
+    width: 100%; }
+    @media (min-width: 760px) {
+      .modal.modal--product .modal-content .details-container {
+        width: 20rem; } }
+
+.img.img--modal {
+  background-size: contain;
+  height: 220px !important; }
+  @media all and (min-width: 40em) {
+    .img.img--modal {
+      height: 274px !important; } }
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #FFFFFF;
@@ -2520,7 +2562,8 @@ footer {
   padding: 2rem;
   width: calc(100% - 2rem);
   height: auto;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 /* The Close Button */
 .modal-close,
@@ -2530,8 +2573,8 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
+  right: 0.5rem;
+  top: 0.5rem;
   padding: 4px 12px; }
 
 .modal-close:hover,
@@ -2543,6 +2586,33 @@ footer {
   color: black;
   text-decoration: none;
   cursor: pointer; }
+
+h4.item-description {
+  color: #95979b;
+  margin-bottom: 1.7rem; }
+
+.item-tag {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  background-color: #A7D3EE;
+  margin: 0rem 0 0 0.4rem;
+  position: relative;
+  top: -0.2rem; }
+
+ul.item-details {
+  float: left;
+  margin-top: 2rem;
+  background-color: rgba(224, 225, 229, 0.6);
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 5px;
+  width: 100%; }
+  ul.item-details h4 {
+    margin: 0 0 0.5rem -1rem; }
+
+li.item-detail {
+  font-size: 0.8rem;
+  list-style: disc; }
 
 .hero {
   background-repeat: no-repeat;
