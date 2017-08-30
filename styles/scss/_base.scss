@@ -10,6 +10,8 @@ body {
   &.white-background { background-color: $white; }
 }
 
+.prevent-scrolling { overflow: hidden;}
+
 a {
   color: $c-white;
   cursor: pointer;

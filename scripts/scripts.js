@@ -34,14 +34,55 @@ window.onclick = function(event) {
 $(function() { $('#modal-content--vinyl').load('vinyl.html'); });
 $(function() { $('#modal-content--sticker').load('sticker.html'); });
 
+
+//paddles modal
 var modalPaddle = document.getElementById('modal--paddle');
 var btnPaddle = document.getElementById("button--paddle");
 var spanPaddle = document.getElementById("close--paddle");
-btnPaddle.onclick = function() { modalPaddle.style.display = "block"; }
-spanPaddle.onclick = function() { modalPaddle.style.display = "none"; }
-window.onclick = function(event) {
+btnPaddle.onclick = function() {
+  modalPaddle.style.display = "block";
+  $('body').addClass('prevent-scrolling');
+}
+spanPaddle.onclick = function() {
+  modalPaddle.style.display = "none";
+  $('body.prevent-scrolling').removeClass('prevent-scrolling');
+}
+modalPaddle.onclick = function(event) {
   if (event.target == modalPaddle) {
     modalPaddle.style.display = "none";
+    $('body.prevent-scrolling').removeClass('prevent-scrolling');
   }
 }
 $(function() { $('#modal-content--paddle').load('templates/shop/paddle.html'); });
+
+//love all modal
+var modalLoveAll = document.getElementById('modal--love-all');
+var btnLoveAll = document.getElementById("button--love-all");
+var spanLoveAll = document.getElementById("close--love-all");
+btnLoveAll.onclick = function() {
+  modalLoveAll.style.display = "block";
+  $('body').addClass('prevent-scrolling');
+}
+spanLoveAll.onclick = function() {
+  modalLoveAll.style.display = "none";
+  $('body.prevent-scrolling').removeClass('prevent-scrolling');
+}
+modalLoveAll.onclick = function(event) {
+  if (event.target == modalLoveAll) {
+    modalLoveAll.style.display = "none";
+    $('body.prevent-scrolling').removeClass('prevent-scrolling');
+  }
+}
+$(function() { $('#modal-content--love-all').load('templates/shop/love-all.html'); });
+// 
+// //new
+// $('.button').click(function(){
+//   var buttonId = $(this).attr('id');
+//   $('#modal-container').removeAttr('class').addClass(buttonId);
+//   $('body').addClass('modal-active');
+// })
+//
+// $('#modal-container').click(function(){
+//   $(this).addClass('out');
+//   $('body').removeClass('modal-active');
+// });
