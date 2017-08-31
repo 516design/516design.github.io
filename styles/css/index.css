@@ -2153,19 +2153,9 @@ footer {
   background-position: center;
   border-radius: 20px;
   box-shadow: none;
-  height: 180px;
-  width: 180px;
   transition: all 0.2s ease-in-out; }
   .content--store .card:hover, .content--store .card .review-link:hover, .card .content--store .review-link:hover, .content--store .help-step:hover {
     background-color: #56575A; }
-  @media all and (min-width: 40em) {
-    .content--store .card, .content--store .card .review-link, .card .content--store .review-link, .content--store .help-step {
-      height: 220px;
-      width: 220px; } }
-  @media all and (min-width: 64em) {
-    .content--store .card, .content--store .card .review-link, .card .content--store .review-link, .content--store .help-step {
-      height: 274px;
-      width: 274px; } }
 
 .card, .card .review-link, .help-step {
   background-color: #FFFFFF;
@@ -2420,21 +2410,11 @@ footer {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: auto;
-  height: 90%;
+  padding: 0 0 100% 0;
   width: 90%;
   transition: all 0.2s ease-in-out; }
   .content--store .img {
-    background-position: center;
-    height: 180px;
-    opacity: .95; }
-    .content--store .img:hover {
-      opacity: 1; }
-    @media all and (min-width: 40em) {
-      .content--store .img {
-        height: 220px; } }
-    @media all and (min-width: 64em) {
-      .content--store .img {
-        height: 274px; } }
+    background-position: center; }
   #lightsaber .img {
     background-image: url("../../img/shop/lightsaber.svg"); }
   #jengo .img {
@@ -2447,8 +2427,6 @@ footer {
     background-image: url("../../img/shop/pokemon.svg"); }
   #captain .img {
     background-image: url("../../img/shop/captain.svg"); }
-  #bb8 .img {
-    background-image: url("../../img/bb8.svg"); }
   #k2so .img {
     background-image: url("../../img/k2so.svg"); }
   #r2d2 .img {
@@ -2481,6 +2459,11 @@ footer {
   background-image: url("../../img/shop/image--love-all.svg"); }
 #love-all .card, #love-all .card .review-link, .card #love-all .review-link, #love-all .help-step {
   background-image: url("../../img/shop/background--love-all.svg"); }
+
+#bb8 .img {
+  background-image: url("../../img/shop/image--bb8.svg"); }
+#bb8 .card, #bb8 .card .review-link, .card #bb8 .review-link, #bb8 .help-step {
+  background-image: url("../../img/shop/background--bb8.svg"); }
 
 .hero--macbook {
   background-image: url("../../img/slate-background.jpg");
@@ -2551,7 +2534,7 @@ footer {
     @media (min-width: 760px) {
       .modal.modal--product .modal-content .modal-item {
         padding: 2rem;
-        width: 20rem; } }
+        width: 50%; } }
   .modal.modal--product .modal-content .details-container {
     float: right;
     padding: 1rem;
@@ -2559,14 +2542,17 @@ footer {
     width: 100%; }
     @media (min-width: 760px) {
       .modal.modal--product .modal-content .details-container {
-        width: 20rem; } }
+        width: 50%; } }
 
 .img.img--modal {
   background-size: contain;
-  height: 220px !important; }
+  padding: 0 0 50% 0; }
   @media all and (min-width: 40em) {
     .img.img--modal {
-      height: 274px !important; } }
+      padding: 0 0 40% 0; } }
+  @media (min-width: 760px) {
+    .img.img--modal {
+      padding: 0 0 100% 0; } }
 
 /* Modal Content/Box */
 .modal-content {
@@ -2600,6 +2586,12 @@ footer {
   color: black;
   text-decoration: none;
   cursor: pointer; }
+
+#modal-content--sticker {
+  max-width: 960px;
+  margin: auto; }
+  #modal-content--sticker .shop-item {
+    width: calc(33.333% - 1.3rem); }
 
 html, body {
   min-height: 100%;
@@ -2782,7 +2774,11 @@ li.item-detail {
 
 .shop-item {
   display: inline-block;
-  margin: 0 0.5rem 2rem 0.5rem; }
+  margin: 0 0.5rem 2rem 0.5rem;
+  width: calc(50% - 1.2rem); }
+  @media all and (min-width: 40em) {
+    .shop-item {
+      width: calc(33.333% - 1.2rem); } }
   .shop-item .shop-item--title {
     display: flex;
     float: left;

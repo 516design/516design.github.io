@@ -90,6 +90,9 @@ $card-count: 5;
 .shop-item {
   display: inline-block;
   margin: 0 0.5rem 2rem 0.5rem;
+  width: calc(50% - 1.2rem);
+  @media #{$tablet} { width: calc(33.333% - 1.2rem); }
+
   .shop-item--title {
     display: flex;
     float: left;

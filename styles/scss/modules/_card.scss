@@ -6,11 +6,8 @@
     background-position: center;
     border-radius: 20px;
     box-shadow: none;
-    height: $store-card--phone; width: $store-card--phone;
     transition: $global-transition;
     &:hover { background-color: #56575A; }
-    @media #{$tablet} { height: $store-card--tablet; width: $store-card--tablet; }
-    @media #{$desktop} { height: $store-card--desktop; width: $store-card--desktop; }
   }
 }
 

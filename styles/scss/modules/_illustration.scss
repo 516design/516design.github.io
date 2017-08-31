@@ -8,18 +8,10 @@
   background-size: 100%;
   background-repeat: no-repeat;
   margin: auto;
-  height: 90%; width: 90%;
+  padding: 0 0 100% 0;
+  width: 90%;
   transition: $global-transition;
-
-  .content--store & {
-    background-position: center;
-    height: $store-card--phone;
-    opacity: .95;
-    &:hover { opacity: 1; }
-
-    @media #{$tablet} { height: $store-card--tablet; }
-    @media #{$desktop} { height: $store-card--desktop; }
-  }
+  .content--store & { background-position: center; }
 
   #lightsaber & { background-image: url("../../img/shop/lightsaber.svg"); }
   #jengo & { background-image: url("../../img/shop/jengo.svg"); }
@@ -29,7 +21,6 @@
   #captain & { background-image: url("../../img/shop/captain.svg"); }
 
   //Stickers
-  #bb8 & { background-image: url("../../img/bb8.svg"); }
   #k2so & { background-image: url("../../img/k2so.svg"); }
   #r2d2 & { background-image: url("../../img/shop/r2d2.svg"); }
   #apple-gum & { background-image: url("../../img/shop/apple-gum.svg"); }
@@ -53,4 +44,9 @@
 #love-all {
   .img { background-image: url("../../img/shop/image--love-all.svg"); }
   .card { background-image: url("../../img/shop/background--love-all.svg"); }
+}
+
+#bb8 {
+  .img { background-image: url("../../img/shop/image--bb8.svg"); }
+  .card { background-image: url("../../img/shop/background--bb8.svg"); }
 }
