@@ -1,6 +1,9 @@
 .card {
   .content--store & {
     background-color: #E0E1E5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
     box-shadow: none;
     height: $store-card--phone; width: $store-card--phone;

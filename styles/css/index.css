@@ -2148,6 +2148,9 @@ footer {
 
 .content--store .card, .content--store .card .review-link, .card .content--store .review-link, .content--store .help-step {
   background-color: #E0E1E5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
   box-shadow: none;
   height: 180px;
@@ -2417,8 +2420,8 @@ footer {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: auto;
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 90%;
   transition: all 0.2s ease-in-out; }
   .content--store .img {
     background-position: center;
@@ -2456,10 +2459,6 @@ footer {
     background-image: url("../../img/shop/classic.svg"); }
   #namastay .img {
     background-image: url("../../img/namastay.svg"); }
-  #paddles .img {
-    background-image: url("../../img/shop/paddles.svg"); }
-  #love-all .img {
-    background-image: url("../../img/shop/love-all.svg"); }
   #bb8-decal .img {
     background-image: url("../../img/shop/bb8-decal.svg"); }
   #r2d2-decal .img {
@@ -2472,6 +2471,16 @@ footer {
     background-image: url("../../img/shop/wisconsin.svg"); }
   #golf .img {
     background-image: url("../../img/shop/golf.svg"); }
+
+#paddles .img {
+  background-image: url("../../img/shop/image--paddles.svg"); }
+#paddles .card, #paddles .card .review-link, .card #paddles .review-link, #paddles .help-step {
+  background-image: url("../../img/shop/background--paddles.svg"); }
+
+#love-all .img {
+  background-image: url("../../img/shop/image--love-all.svg"); }
+#love-all .card, #love-all .card .review-link, .card #love-all .review-link, #love-all .help-step {
+  background-image: url("../../img/shop/background--love-all.svg"); }
 
 .hero--macbook {
   background-image: url("../../img/slate-background.jpg");
@@ -2708,7 +2717,7 @@ li.item-detail {
   width: 100%; }
   .hero.hero--home, .hero.hero--airpod {
     background-color: #FFFFFF;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     border-bottom: 3px solid #5B5D5D;
     height: 280px; }

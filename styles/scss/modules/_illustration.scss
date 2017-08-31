@@ -8,7 +8,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   margin: auto;
-  height: 80%; width: 80%;
+  height: 90%; width: 90%;
   transition: $global-transition;
 
   .content--store & {
@@ -35,8 +35,6 @@
   #apple-gum & { background-image: url("../../img/shop/apple-gum.svg"); }
   #classic & { background-image: url("../../img/shop/classic.svg"); }
   #namastay & { background-image: url("../../img/namastay.svg"); }
-  #paddles & { background-image: url("../../img/shop/paddles.svg"); }
-  #love-all & { background-image: url("../../img/shop/love-all.svg"); }
 
   //Vinyl Decal
   #bb8-decal & { background-image: url("../../img/shop/bb8-decal.svg"); }
@@ -45,4 +43,14 @@
   #texas & { background-image: url("../../img/shop/texas.svg"); }
   #wisconsin & { background-image: url("../../img/shop/wisconsin.svg"); }
   #golf & { background-image: url("../../img/shop/golf.svg"); }
+}
+
+#paddles {
+  .img { background-image: url("../../img/shop/image--paddles.svg"); }
+  .card { background-image: url("../../img/shop/background--paddles.svg"); }
+}
+
+#love-all {
+  .img { background-image: url("../../img/shop/image--love-all.svg"); }
+  .card { background-image: url("../../img/shop/background--love-all.svg"); }
 }
