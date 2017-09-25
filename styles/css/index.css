@@ -2451,24 +2451,52 @@ footer {
     background-image: url("../../img/shop/golf.svg"); }
 
 #paddles .img {
-  background-image: url("../../img/shop/image--paddles.svg"); }
+  background-image: url("../../img/shop/image--paddles.png"); }
 #paddles .card, #paddles .card .review-link, .card #paddles .review-link, #paddles .help-step {
-  background-image: url("../../img/shop/background--paddles.svg"); }
+  background: -webkit-linear-gradient(left top, #87C5D1, #68BBC9);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #87C5D1, #68BBC9);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #87C5D1, #68BBC9);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #87C5D1, #68BBC9);
+  /* Standard syntax */ }
 
 #love-all .img {
-  background-image: url("../../img/shop/image--love-all.svg"); }
+  background-image: url("../../img/shop/image--love-all.png"); }
 #love-all .card, #love-all .card .review-link, .card #love-all .review-link, #love-all .help-step {
-  background-image: url("../../img/shop/background--love-all.svg"); }
+  background: -webkit-linear-gradient(left top, #799AA6, #5D8390);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #799AA6, #5D8390);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #799AA6, #5D8390);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #799AA6, #5D8390);
+  /* Standard syntax */ }
 
 #bb8 .img {
-  background-image: url("../../img/shop/image--bb8.svg"); }
+  background-image: url("../../img/shop/image--bb8.png"); }
 #bb8 .card, #bb8 .card .review-link, .card #bb8 .review-link, #bb8 .help-step {
-  background-image: url("../../img/shop/background--bb8.svg"); }
+  background: -webkit-linear-gradient(left top, #58C09F, #30B993);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #58C09F, #30B993);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #58C09F, #30B993);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #58C09F, #30B993);
+  /* Standard syntax */ }
 
 #us-open .img {
-  background-image: url("../../img/shop/image--us-open.svg"); }
+  background-image: url("../../img/shop/image--us-open.png"); }
 #us-open .card, #us-open .card .review-link, .card #us-open .review-link, #us-open .help-step {
-  background-image: url("../../img/shop/background--us-open.svg"); }
+  background: -webkit-linear-gradient(left top, #73C48D, #59B47A);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #73C48D, #59B47A);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #73C48D, #59B47A);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #73C48D, #59B47A);
+  /* Standard syntax */ }
 
 .hero--macbook {
   background-image: url("../../img/slate-background.jpg");
