@@ -74,7 +74,7 @@ modalLoveAll.onclick = function(event) {
   }
 }
 $(function() { $('#modal-content--love-all').load('templates/shop/love-all.html'); });
-// 
+//
 // //new
 // $('.button').click(function(){
 //   var buttonId = $(this).attr('id');

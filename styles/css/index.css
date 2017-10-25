@@ -2304,7 +2304,8 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1; }
   .header--logo {
     background-image: url("../../img/logo--dark.svg");
     background-repeat: no-repeat;
@@ -2452,7 +2453,7 @@ footer {
 
 #paddles .img {
   background-image: url("../../img/shop/image--paddles.png"); }
-#paddles .card, #paddles .card .review-link, .card #paddles .review-link, #paddles .help-step {
+#paddles .atvImg-layers {
   background: -webkit-linear-gradient(left top, #87C5D1, #68BBC9);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #87C5D1, #68BBC9);
@@ -2629,6 +2630,7 @@ footer {
 html, body {
   min-height: 100%;
   height: 100%;
+  overflow-y: auto;
   background-size: cover;
   background-position: top center; }
   html.modal-active, body.modal-active {
@@ -2736,6 +2738,74 @@ li.item-detail {
   font-size: 0.8rem;
   list-style: disc; }
 
+.atvImg {
+  display: inline-block;
+  width: 100%;
+  height: calc(100vw/2 - 1.2rem);
+  margin: 0;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer; }
+  @media all and (min-width: 40em) {
+    .atvImg {
+      height: calc(100vw/3 - 3.2rem);
+      max-height: 289px; } }
+  .atvImg.depressed {
+    margin-top: 25px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4); }
+  .atvImg img {
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(14, 21, 47, 0.25); }
+
+.atvImg-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.2s ease-out; }
+
+.atvImg-container.over .atvImg-shadow {
+  box-shadow: 0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4); }
+
+.atvImg-layers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-style: preserve-3d; }
+
+.atvImg-rendered-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: cover;
+  transition: all 0.1s ease-out; }
+
+.atvImg-shadow {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 8px 30px rgba(14, 21, 47, 0); }
+
+.atvImg-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 40%); }
+
 .hero {
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2757,10 +2827,10 @@ li.item-detail {
 
 .content {
   margin: 4rem auto;
-  max-width: 920px; }
+  max-width: 1040px; }
   @media all and (min-width: 40em) {
     .content {
-      padding: 1rem; } }
+      padding: 0 3rem; } }
   .content .macbook {
     background-color: #D6D6DC;
     border-radius: 20px;

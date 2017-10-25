@@ -31,8 +31,8 @@ $card-count: 5;
 
 .content {
   margin: 4rem auto;
-  max-width: 920px;
-  @media #{$tablet} { padding: 1rem; }
+  max-width: 1040px;
+  @media #{$tablet} { padding: 0 3rem; }
   .macbook {
     background-color: #D6D6DC;
     border-radius: 20px;
