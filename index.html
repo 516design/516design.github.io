@@ -5,6 +5,7 @@
 <!-- Enable responsive view on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <title>516 Design</title>
+
 <link rel="stylesheet" type="text/css" href="styles/css/index.css">
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
@@ -21,7 +22,6 @@
   ga('send', 'pageview');
 
 </script>
-<script src="scripts/paralax.js"></script>
 
 </head>
 
@@ -55,7 +55,7 @@
     <!-- Stickers -->
     <h1 class="shop-header">
       Stickers
-      <button id="button--sticker" class="button shop-button button--smooth button--small">View More</button>
+      <!-- <button id="button--sticker" class="button shop-button button--smooth button--small">View More</button> -->
 
       <!-- Modal content -->
       <div id="modal--sticker" class="modal">
@@ -68,8 +68,8 @@
 
     <div class="shop-item" id="paddles">
       <a class="atvImg" id="button--paddle">
-        <img src='http://516design.com/img/shop/paddles.svg'>
-        <div class='atvImg-layer' data-img='http://516design.com/img/shop/paddles.svg'></div>
+        <img src='img/shop/image--paddles.png'>
+        <div class='atvImg-layer' data-img='img/shop/image--paddles.png'></div>
       </a>
       <div class="card-title">
         <span class="shop-item--title"><p>Paddles</p></span>
@@ -86,8 +86,9 @@
     </div>
 
     <div class="shop-item" id="love-all">
-      <a class="card is-selectable" id="button--love-all">
-        <div class="img"></div>
+      <a class="atvImg" id="button--love-all">
+        <img src='img/shop/image--love-all.png'>
+        <div class='atvImg-layer' data-img='img/shop/image--love-all.png'></div>
       </a>
       <div class="card-title">
         <span class="shop-item--title"><p>Love All</p></span>
@@ -103,23 +104,36 @@
       </div>
     </div>
 
-    <div class="shop-item" id="us-open">
-      <a class="card is-selectable" href="https://www.etsy.com/516Design/listing/556444971/were-open-sticker?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1504760349971" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>We're Open</p></span>
-        <p class="shop-item--price">$4</p>
-      </div>
-    </div>
-
     <div class="shop-item" id="bb8">
-      <a class="card is-selectable" href="http://etsy.me/2pYVZhH" target="_blank">
-        <div class="img"></div>
+      <a class="atvImg" href="http://etsy.me/2pYVZhH" target="_blank">
+        <img src='img/shop/image--bb8.png'>
+        <div class='atvImg-layer' data-img='img/shop/image--bb8.png'></div>
       </a>
       <div class="card-title">
         <span class="shop-item--title"><p>BB8</p></span>
         <p class="shop-item--price">$5</p>
+      </div>
+    </div>
+
+    <div class="shop-item" id="florida-fins">
+      <a class="atvImg" href="http://etsy.me/2pYVZhH" target="_blank">
+        <img src='img/shop/image--florida-fins.png'>
+        <div class='atvImg-layer' data-img='img/shop/image--florida-fins.png'></div>
+      </a>
+      <div class="card-title">
+        <span class="shop-item--title"><p>Florida Fins</p></span>
+        <p class="shop-item--price">$4</p>
+      </div>
+    </div>
+
+    <div class="shop-item" id="lets-go-fishing">
+      <a class="atvImg" href="http://etsy.me/2pYVZhH" target="_blank">
+        <img src='img/shop/image--lets-go-fishing.png'>
+        <div class='atvImg-layer' data-img='img/shop/image--lets-go-fishing.png'></div>
+      </a>
+      <div class="card-title">
+        <span class="shop-item--title"><p>Let's Go Fishing</p></span>
+        <p class="shop-item--price">$4</p>
       </div>
     </div>
 
@@ -133,155 +147,6 @@
       </div>
     </div>
 
-    <div class="shop-item" id="r2d2">
-      <a class="card is-selectable" href="http://etsy.me/2pvB5d1" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>R2D2</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <!-- Vinyl Decals -->
-    <h1 class="shop-header">
-      Vinyl Decals
-      <button id="button--vinyl" class="button shop-button button button--smooth button--small">View More</button>
-
-      <!-- Modal content -->
-      <div id="modal--vinyl" class="modal">
-        <div class="modal-content">
-          <button class="button button--gray button--smooth modal-vinyl-close">&times;</button>
-          <div id="modal-content--vinyl"></div>
-        </div>
-
-      </div>
-    </h1>
-
-    <div class="shop-item" id="bb8-decal">
-      <a class="card is-selectable" href="http://etsy.me/2a5JT0U" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>BB8</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="r2d2-decal">
-      <a class="card is-selectable" href="http://etsy.me/2oIee9a" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>R2D2</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="stormtrooper-decal">
-      <a class="card is-selectable" href="http://etsy.me/2pxx5Ze" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Stormtrooper</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="texas">
-      <a class="card is-selectable" href="http://etsy.me/2ouckNY" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>State - Detailed</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="wisconsin">
-      <a class="card is-selectable" href="http://etsy.me/2q3lQVs" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>State - Acronym</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="golf">
-      <a class="card is-selectable" href="http://etsy.me/1NAuhAw" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Golf</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
-
-    <!-- Colored Decals -->
-    <h1 class="shop-header">
-      Colored Decals
-    </h1>
-
-    <div class="shop-item" id="lightsaber">
-      <a class="card is-selectable" href="http://etsy.me/2oqcuWH" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Lightsaber</p></span>
-        <p class="shop-item--price">$8</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="jengo">
-      <a class="card is-selectable" href="http://etsy.me/2pvsN4J" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Jengo Fett</p></span>
-        <p class="shop-item--price">$8</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="boba">
-      <a class="card is-selectable" href="http://etsy.me/2q0eMJa" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Boba Fett</p></span>
-        <p class="shop-item--price">$8</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="superman">
-      <a class="card is-selectable" href="http://etsy.me/29hAzW6" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Superman</p></span>
-        <p class="shop-item--price">$8</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="captain">
-      <a class="card is-selectable" href="http://etsy.me/2pZ0o42" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Captain America</p></span>
-        <p class="shop-item--price">$8</p>
-      </div>
-    </div>
-
-    <div class="shop-item" id="pokemon">
-      <a class="card is-selectable" href="http://etsy.me/2pZ0oRA" target="_blank">
-        <div class="img"></div>
-      </a>
-      <div class="card-title">
-        <span class="shop-item--title"><p>Pokémon</p></span>
-        <p class="shop-item--price">$5</p>
-      </div>
-    </div>
   </div>
 
   <div class="section section--review">
@@ -367,6 +232,8 @@
     <p>&copy;2017 516Design</p>
   </footer>
   <script src="scripts/scripts.js"></script>
+
+  <script src="scripts/paralax.js"></script>
 
 </body>
 </html>
