@@ -1,4 +1,4 @@
-$image-radius: 20px;
+$image-radius: 3px;
 
 .atvImg{
   display: inline-block;
@@ -55,15 +55,23 @@ $image-radius: 20px;
 	transition: all 0.1s ease-out;
 }
 
-.atvImg-shadow {
-	position: absolute;
-	top: 5%;
-	left: 5%;
-	width: 90%;
-	height: 90%;
-	transition: all 0.2s ease-out;
-	box-shadow: 0 8px 30px rgba(14,21,47,0.0);
-}
+// .atvImg-shadow {
+//
+// // /* iOS support */
+// //  -webkit-mask: url("../../img/k2so.svg");/*Chrome,Safari*/
+// // -webkit-clip-path: url("../../img/k2so.svg");
+// //
+// // /* Firefox*/
+// // clip-path: url(/clip.svg#svgClip);
+//
+// 	position: absolute;
+// 	top: 5%;
+// 	left: 5%;
+// 	width: 90%;
+// 	height: 90%;
+// 	transition: all 0.2s ease-out;
+// 	box-shadow: 0 8px 30px rgba(14,21,47,0.0);
+// }
 
 .atvImg-shine {
 	position: absolute;

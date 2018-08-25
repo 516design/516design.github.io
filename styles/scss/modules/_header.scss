@@ -1,17 +1,18 @@
 .header {
-  background-color: $c-gray;
-  position: absolute;
-  top: 0; right: 0; left: 0;
-  z-index: 1;
+  background-color: $c-white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 4rem;
 
   &--logo {
-    background-image: url("../../img/logo--dark.svg");
+    background-image: url("../../img/logo.png");
     background-repeat: no-repeat;
     background-size: 100%;
     cursor: pointer;
     height: 1.7rem; width: 6rem;
     float: left;
-    margin: 0.6rem 0.8rem 0 0;
+    margin: 0 0.8rem 0 0;
     &:hover {
       opacity: .7;
     }
@@ -28,8 +29,9 @@
       font-size: 1rem;
       font-weight: 600;
       margin: 0 0.2rem;
-      padding: 0.8rem;
+      padding: 0.3rem 0.4rem;
       text-transform: uppercase;
+      border-radius: 3px;
     }
   }
 }

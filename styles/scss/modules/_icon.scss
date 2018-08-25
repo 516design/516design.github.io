@@ -22,6 +22,18 @@
   transition: .2s ease-in-out;
 }
 
+.icon--tshirt,
+.icon--sticker {
+  height: 45px; width: 45px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  float: left;
+  margin-right: 0.5rem;
+}
+.icon--sticker { background-image: url("../../img/shop/sticker_icon.png"); }
+.icon--tshirt { background-image: url("../../img/shop/tshirt_icon.png"); }
+
 $small-icon: 4.5rem;
 $medium-icon: 6rem;
 $large-icon: 7rem;

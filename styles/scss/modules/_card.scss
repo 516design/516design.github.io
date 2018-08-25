@@ -1,13 +1,13 @@
 .card {
   .content--store & {
-    background-color: #E0E1E5;
+    // background-color: #E0E1E5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     box-shadow: none;
     transition: $global-transition;
-    &:hover { background-color: #56575A; }
+    &:hover { background-color: #F0F2F4; }
   }
 }
 

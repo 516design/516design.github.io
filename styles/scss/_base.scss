@@ -6,8 +6,7 @@ html {
 }
 
 body {
-  background-color: rgba(#D6D8DE, .5);
-  &.white-background { background-color: $white; }
+  background-color: #F0F2F4;
 }
 
 .prevent-scrolling { overflow: hidden;}
