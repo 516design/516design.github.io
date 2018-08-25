@@ -38,21 +38,34 @@ $small-icon: 4.5rem;
 $medium-icon: 6rem;
 $large-icon: 7rem;
 
-.icon--apple {
-  @extend .icon;
-  background-image: url("../../img/icon--apple.svg");
-  padding: 7.5%;
-  top: 36%; right: 42.5%;
-}
+.social-icons {
+  a {
+    background-color: $c-white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: 1px solid #EBECEF;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    margin-right: 0.5rem;
+    width: 50px; height: 50px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.02, 1.02);
+    &:hover {
+      box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+      -webkit-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05);
+    }
+  }
 
-.decal__il--d {
-  @extend .icon;
-  background-image: url("../../img/decal__il--d.svg");
-  opacity: 1;
-  z-index: 1;
-  padding: 10%;
-  top: 35%; right: 40%;
-  &:hover {
-    opacity: .5;
+  .social-icon--instagram {
+    background-image: url("../../img/social_insta.png");
+    border-radius: 15px;
+  }
+  .social-icon--dribbble {
+    background-image: url("../../img/social_dribbble.png");
+    border-radius: 50px;
   }
 }

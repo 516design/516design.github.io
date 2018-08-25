@@ -117,6 +117,11 @@ $card-count: 5;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+  img {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
   &:hover {
     -webkit-transform: scale(1.02, 1.02);
     transform: scale(1.02, 1.02);
@@ -125,8 +130,6 @@ $card-count: 5;
     img {
       -webkit-transform: scale(1.05, 1.05);
       transform: scale(1.05, 1.05);
-      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
 
@@ -159,4 +162,13 @@ $card-count: 5;
   &:not(:first-of-type) { margin-top: 6rem; }
 }
 
-#footer { }
+footer .row {
+  padding: 0 3rem;
+  max-width: 1040px;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

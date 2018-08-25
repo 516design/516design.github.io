@@ -2375,7 +2375,7 @@ footer {
 .twitter-icon {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="355.797" height="291.215" viewBox="0 0 355.797 291.215"><title>twitter</title><path d="M346.554,5.332c-5.972,17.317-16.088,29.9-30.01,40.251,4.218-.723,8.478-1.262,12.642-2.219,4.366-1,8.668-2.319,12.947-3.662,4.226-1.327,8.387-2.859,13.665-4.675a127.809,127.809,0,0,1-28.009,30.922c-5.863,4.617-8.295,9.147-8.3,16.855-0.049,52.174-18.012,97.964-51.47,137.651C237.951,256.117,199.545,278.242,153.871,287,100.887,297.152,50.663,289.082,3.89,261.6c-1-.589-1.965-1.254-2.919-1.922A7.888,7.888,0,0,1,0,258.309c39.42,3.648,74.5-6.514,106.96-30.575-16.5-.979-30.465-5.613-42.675-14.859A73.205,73.205,0,0,1,38.706,177.62c5.3,0,10.357.015,15.415,0a46.763,46.763,0,0,0,16.235-2.383c-17.489-4.795-31.312-13.071-41.779-26.257-10.593-13.344-15.787-28.655-16.072-46.5,10.375,4.931,20.634,8.5,32.255,8.949C12.3,84.354,5.111,51.983,22.32,13.71c3.452,1.669,4.748,4.5,6.712,6.658C56.707,50.811,90.249,71.858,129.88,82.961a209.838,209.838,0,0,0,41.7,7.079c3.691,0.265,2.708-1.562,2.346-3.632-3.594-20.552.649-39.5,12.91-56.243C199.768,12.506,217.345,2.322,239.383.344Q272.9-2.665,297.2,20.616c2.343,2.247,4.593,2.057,7.3,1.447C319.045,18.784,332.65,13.111,346.554,5.332Z" style="fill:%235fa9dd"/></svg>'); }
 
-.icon, .icon--apple, .decal__il--d {
+.icon {
   background-size: 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -2399,21 +2399,31 @@ footer {
 .icon--tshirt {
   background-image: url("../../img/shop/tshirt_icon.png"); }
 
-.icon--apple {
-  background-image: url("../../img/icon--apple.svg");
-  padding: 7.5%;
-  top: 36%;
-  right: 42.5%; }
-
-.decal__il--d {
-  background-image: url("../../img/decal__il--d.svg");
-  opacity: 1;
-  z-index: 1;
-  padding: 10%;
-  top: 35%;
-  right: 40%; }
-  .decal__il--d:hover {
-    opacity: .5; }
+.social-icons a {
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border: 1px solid #EBECEF;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  margin-right: 0.5rem;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform: scale(1.02, 1.02);
+  transform: scale(1.02, 1.02); }
+  .social-icons a:hover {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05); }
+.social-icons .social-icon--instagram {
+  background-image: url("../../img/social_insta.png");
+  border-radius: 15px; }
+.social-icons .social-icon--dribbble {
+  background-image: url("../../img/social_dribbble.png");
+  border-radius: 50px; }
 
 .il-shop {
   background-image: url("../../img/storefront.svg");
@@ -2930,15 +2940,16 @@ li.item-detail {
   @media all and (min-width: 64em) {
     .shop-item {
       width: calc(33.333% - 1.2rem); } }
+  .shop-item img {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
   .shop-item:hover {
     -webkit-transform: scale(1.02, 1.02);
     transform: scale(1.02, 1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
     .shop-item:hover img {
       -webkit-transform: scale(1.05, 1.05);
-      transform: scale(1.05, 1.05);
-      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      transform: scale(1.05, 1.05); }
   .shop-item .shop-item--title {
     display: block; }
     .shop-item .shop-item--title p {
@@ -2962,6 +2973,15 @@ li.item-detail {
   text-align: left; }
   .shop-header:not(:first-of-type) {
     margin-top: 6rem; }
+
+footer .row {
+  padding: 0 3rem;
+  max-width: 1040px; }
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .nav--item.is-active {
   background-color: #4AA0D4; }
