@@ -110,8 +110,12 @@ $card-count: 5;
   display: inline-block;
   margin: 0 0.5rem 2rem 0.5rem;
   text-align: center;
-  width: 80%;
-  @media #{$tablet} { width: calc(50% - 1.2rem); }
+  // width: 80%;
+  margin: 0 0.3rem 1rem 0.3rem;
+  text-align: center;
+  width: calc(50% - 1.2rem);
+
+  // @media #{$tablet} { width: calc(50% - 1.2rem); }
   @media #{$desktop} { width: calc(33.333% - 1.2rem); }
 
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
