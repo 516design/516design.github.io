@@ -128,3 +128,23 @@
   padding: 0.5rem;
   overflow: auto;
 }
+
+.shop-item--title.sold-out {
+  opacity: .2;
+}
+
+.shop-item--price.sold-out {
+  font-style: italic;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.tag--new {
+  color: $white;
+  margin-left: 0.5rem;
+  background-color: #009e54;
+  padding: .1rem .3rem;
+  border-radius: 3px;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
